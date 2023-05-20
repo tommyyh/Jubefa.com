@@ -1,0 +1,67 @@
+// @import '../../assets/scss/reset.scss';
+
+// .loading {
+//   --bg-image: var(--body-image);
+//   --animation-time: 3s;
+//   --dot-size: 1.25rem;
+//   --dots-length: calc(7 * var(--dot-size));
+
+//   width: 100%;
+//   height: var(--dot-size);
+//   margin-top: 3rem;
+  
+//   display: flex;
+//   position: relative;
+  
+//   overflow: hidden;
+// }
+
+// .loading > span {
+//   display: inline-block;
+//   position: absolute;
+  
+//   background: $primary-grey;
+//   width: var(--dot-size);
+//   height: var(--dot-size);
+//   border-radius: 50%;
+  
+//   --initial-left: 0px;
+// }
+
+// .loading > span:nth-child(1) {
+//   --initial-left: 0px;
+//   --animation-delay: calc(4/10 * var(--animation-time));
+// }
+
+// .loading > span:nth-child(2) {
+//   --initial-left: calc(1.5 * var(--dot-size));
+//   --animation-delay: calc(3/10 * var(--animation-time));
+// }
+
+// .loading > span:nth-child(3) {
+//   --initial-left: calc(3 * var(--dot-size));
+//   --animation-delay: calc(2/10 * var(--animation-time));
+// }
+
+// .loading > span:nth-child(4) {
+//   --initial-left: calc(4.5 * var(--dot-size));
+//   --animation-delay: calc(1/10 * var(--animation-time));
+// }
+
+// .loading > span:nth-child(5) {
+//   --initial-left: calc(6 * var(--dot-size));
+//   --animation-delay: calc(0/10 * var(--animation-time));
+// }
+
+// .loading > span {
+//   animation: move var(--animation-time) cubic-bezier(0.3,1,0.5,0) infinite;
+//   animation-delay: var(--animation-delay);
+  
+//   left: calc(var(--initial-left) - var(--dots-length));
+// }
+
+// @keyframes move {
+//   50%, 100% {
+//     left: calc(100% + var(--initial-left));
+//   }
+// }

@@ -1,0 +1,19 @@
+{
+  "general": {
+    "company": "Jubefa",
+    "tel": "+49 351 27501899",
+    "email": "kontakt@jubefa.com",
+    "address": "Alttrachau 34",
+    "city": "Dresden",
+    "postCode": "01139",
+    "url": "https://www.jubefa.com",
+    "author": "Justus-Konrad Flade"
+  },
+  "nav": {
+    "home": "Home",
+    "abroad": "Selling Abroad",
+    "contact": "Contact us",
+    "sell": "Sell your property",
+    "close": "close"
+  }
+}

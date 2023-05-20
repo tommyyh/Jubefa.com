@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap');
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $general-font;
+
+  & h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+  }
+
+  & button {
+    font-family: $general-font;
+  }
+}
+
+// Remove weird blue background when google autofill is used on inputs 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+// Desktop view
+@media all and (min-width: 1025px) {
+  button {
+    cursor: pointer;
+  }
+}
+
+// Auto adjust tablet view
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 25px;
+  }
+}
