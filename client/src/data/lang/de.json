@@ -71,5 +71,11 @@
       "cta": "Contact us",
       "position": "5/5"
     }
+  },
+  "profit": {
+    "sub": "/Eigenschaft zum Gewinn",
+    "title": "Wir verwandeln Ihre Immobilie in einen rentablen Vermögenswert",
+    "text": "Wir wissen, dass jede Immobilie einzigartig ist. Deshalb bieten wir maßgeschneiderte Lösungen zur Maximierung der Rentabilität. Unser erfahrenes Team wird mit Ihnen zusammenarbeiten, um die besten Strategien zu finden, die Ihre Immobilie zu einer erfolgreichen Investition machen. Lassen Sie uns Ihnen zu finanziellem Erfolg verhelfen.",
+    "cta": "Mehr Gewinn machen"
   }
 }

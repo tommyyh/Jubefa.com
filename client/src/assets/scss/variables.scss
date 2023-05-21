@@ -5,8 +5,9 @@ $header-font: 'Raleway', sans-serif;
 $accent: #133A75;
 $primary: #fff;
 $second: #061A2F;
-$text: #708397;
-$title: #0A2540;
+$text: #4d5d6d;
+$title-lighter: #0A2540;
+$title: #051a2e;
 
 // Other
 $primary-darker: #ebeaea;
@@ -39,3 +40,17 @@ $form-padding: 2.4rem;
 $padding2: 2.4rem;
 $width: 1268px;
 $height: 646px;
+
+@mixin titles {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: $title;
+  line-height: 2.1rem;
+}
+
+@mixin text {
+  font-size: 0.99rem;
+  font-weight: 300;
+  color: $text;
+}

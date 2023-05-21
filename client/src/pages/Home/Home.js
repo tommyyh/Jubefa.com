@@ -5,6 +5,7 @@ import Loading from 'components/Loading/Loading';
 import Navbar from 'components/Navbar/Navbar';
 import Landing from './components/Landing';
 import Services from 'components/Services/Services';
+import Illustration from 'components/Illustration/Illustration';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ const Home = () => {
       <Navbar lang={lang} langCode={langCode} />
       <Landing lang={lang} langCode={langCode} />
       <Services lang={lang} langCode={langCode} />
+      <Illustration lang={lang.profit} langCode={langCode} />
     </>
   );
 };

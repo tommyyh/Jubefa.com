@@ -71,5 +71,11 @@
       "cta": "Contact us",
       "position": "5/5"
     }
+  },
+  "profit": {
+    "sub": "/Property to Profit",
+    "title": "We transform your property into a profitable asset",
+    "text": "We understand that every property is unique, which is why we offer tailored solutions to maximize its profitability. Our experienced team will work with you to identify the best strategies to make your property a successful investment. Let us help you achieve financial success.",
+    "cta": "Make more profit"
   }
 }

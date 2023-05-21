@@ -16,10 +16,10 @@ const Service = ({ langCode, l, img }) => {
               xmlns='http://www.w3.org/2000/svg'
               className={css['cta-arrow']}
             >
-              <g clip-path='url(#clip0_278_221)'>
+              <g clipPath='url(#clip0_278_221)'>
                 <path
                   d='M1.46509 9.34514L5.224 5.6528L1.46509 1.96046'
-                  stroke-linecap='round'
+                  strokeLinecap='round'
                 />
               </g>
               <defs>

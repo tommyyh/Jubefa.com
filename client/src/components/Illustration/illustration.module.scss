@@ -1,0 +1,37 @@
+@import '../../assets/scss/variables.scss';
+
+.illustration {
+  padding: 5.5rem 0 0 0;
+}
+
+// Content
+.content {
+  padding: 0 $padding 1.5rem $padding;
+
+  // Sub Title
+  & h3 {
+    font-size: 0.92rem;
+    color: $accent;
+    font-family: $general-font;
+    font-weight: 500;
+  }
+
+  // Title
+  & h2 {
+    margin: 0 6rem 0 0;
+
+    @include titles;
+  }
+
+  // Text
+  & p {
+    margin: 1.2rem 2rem 0 0;
+
+    @include text;
+  }
+
+  // Illustration
+  & .graph {
+    width: 100%;
+  }
+}
