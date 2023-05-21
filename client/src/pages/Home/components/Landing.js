@@ -5,13 +5,17 @@ import ChevronSVG from 'assets/icons/chevron.svg';
 
 const Landing = ({ langCode, lang }) => {
   const l = lang.landing;
+  const slicePosition = langCode === 'de' ? 2 : 3; // If its EN slice the title at a different position due to different lengths
 
   return (
     <main className={css['landing']}>
       <h3>{l.sub}</h3>
       <h1>
-        <span>{l.title.split(' ').slice(0, 3).join(' ')}</span>
-        <span> {l.title.split(' ').slice(3, l.title.length).join(' ')}</span>
+        <span>{l.title.split(' ').slice(0, slicePosition).join(' ')}</span>
+        <span>
+          {' '}
+          {l.title.split(' ').slice(slicePosition, l.title.length).join(' ')}
+        </span>
       </h1>
 
       <Link to={`/${langCode}/`} className={css['cta']}>

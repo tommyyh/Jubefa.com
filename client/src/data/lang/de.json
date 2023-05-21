@@ -18,5 +18,58 @@
     "projectDev": "Projektentwicklung",
     "contact": "Kontakt",
     "cta": "Immobilien verkaufen"
+  },
+  "landing": {
+    "sub": "/Von der Planung zur Ausführung",
+    "title": "Projektentwicklung für die Immobilienbranche.",
+    "cta": "Bauen Sie mit uns!"
+  },
+  "services": {
+    "service1": {
+      "title": "Projektentwicklung für Immobilien",
+      "points": {
+        "1": "Planung",
+        "2": "Entwicklung",
+        "3": "Fertigstellung",
+        "4": "Marketing"
+      },
+      "position": "1/5"
+    },
+    "service2": {
+      "title": "Bauwesen",
+      "points": {
+        "1": "Gestaltung",
+        "2": "Ausführung",
+        "3": "Beaufsichtigung",
+        "4": "Qualitätskontrolle"
+      },
+      "position": "2/5"
+    },
+    "service3": {
+      "title": "Revitalisierung von Industriebrachen",
+      "points": {
+        "1": "Bewertung",
+        "2": "Sanierung",
+        "3": "Neuentwicklung",
+        "4": "Einhaltung der Umweltvorschriften"
+      },
+      "position": "3/5"
+    },
+    "service4": {
+      "title": "Planung und Installation von Solaranlagen",
+      "points": {
+        "1": "Durchführbarkeit",
+        "2": "Gestaltung",
+        "3": "Einrichtung",
+        "4": "Überwachung"
+      },
+      "position": "4/5"
+    },
+    "service5": {
+      "title": "Haben Sie nicht gefunden, wonach Sie gesucht haben?",
+      "text": "Es tut uns leid zu hören, dass Sie nicht gefunden haben, wonach Sie gesucht haben.",
+      "cta": "Contact us",
+      "position": "5/5"
+    }
   }
 }

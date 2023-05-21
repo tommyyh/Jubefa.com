@@ -23,5 +23,53 @@
     "sub": "/From planning to execution",
     "title": "Project development for real estate businesses.",
     "cta": "Build with us!"
+  },
+  "services": {
+    "service1": {
+      "title": "Project development for real estate",
+      "points": {
+        "1": "Planning",
+        "2": "Development",
+        "3": "Finishing",
+        "4": "Marketing"
+      },
+      "position": "1/5"
+    },
+    "service2": {
+      "title": "Construction",
+      "points": {
+        "1": "Design",
+        "2": "Execution",
+        "3": "Supervision",
+        "4": "Quality control"
+      },
+      "position": "2/5"
+    },
+    "service3": {
+      "title": "Revitalization of brownfields",
+      "points": {
+        "1": "Assessment",
+        "2": "Remediation",
+        "3": "Redevelopment",
+        "4": "Environmental compliance"
+      },
+      "position": "3/5"
+    },
+    "service4": {
+      "title": "Planning and installation of solar systems",
+      "points": {
+        "1": "Feasibility",
+        "2": "Design",
+        "3": "Installation",
+        "4": "Monitoring"
+      },
+      "position": "4/5"
+    },
+    "service5": {
+      "title": "Didn’t find what you were looking for?",
+      "text": "We’re sorry to hear you haven’t found what you were looking for. Contact us and we will get through it together!",
+      "cta": "Contact us",
+      "position": "5/5"
+    }
   }
 }
