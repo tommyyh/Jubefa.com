@@ -1,0 +1,104 @@
+@import '../../../assets/scss/variables.scss';
+
+.landing {
+  padding: 10.8rem $padding 0 $padding;
+
+  // Subtitle
+  & h3 {
+    margin: 0 0 2.5px 0;
+
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $text;
+    font-family: $general-font;
+  }
+
+  // Title
+  & h1 {
+    margin: 0.23rem 0 0 0;
+
+    font-size: 1.86rem;
+    font-weight: 700;
+    color: $title;
+    letter-spacing: -1.2px;
+    
+    & span:last-child {
+      display: flex;
+      justify-content: flex-end;
+
+      width: 100%;
+    }
+  }
+}
+
+// CTA
+.cta {
+  display: flex;
+
+  padding: 0.8rem 0 0 0;
+
+  text-decoration: none;
+
+  // Chevron main
+  & .cta-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 5.27rem;
+    height: 5.27rem;
+    margin: 0 0 0 0.73rem;
+
+    background: $accent;
+    border-radius: 50%;
+  }
+}
+
+// Bubble
+.cta-bubble {
+  padding: 0 0 0 1.6rem;
+
+  // Main
+  & h4 {
+    width: fit-content;
+    padding: 0.46rem 1.42rem;
+    margin: 0.73rem 0 0 0;
+
+    font-family: $general-font;
+    font-weight: 500;
+    font-size: 0.79rem;
+    color: $btn-text;
+    background: $accent;
+    border-radius: 3.1rem;
+  }
+
+  & .cta-dot {
+    width: 8px;
+    height: 8px;
+    margin: -1px 0 0 -2.9px;
+    position: relative;
+
+    background: $accent;
+    border-radius: 50%;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      margin: -0.9px 0 0 -2.76px;
+      left: -4.2px;
+      bottom: -4.2px;
+  
+      background: $accent;
+      border-radius: 50%;
+    }
+
+    &::after {
+      width: 4px;
+      height: 4px;
+      left: -9.2px;
+      bottom: -7.5px;
+    }
+  }
+}

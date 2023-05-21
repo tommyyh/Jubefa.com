@@ -18,5 +18,10 @@
     "projectDev": "Project Development",
     "contact": "Contact",
     "cta": "Sell property"
+  },
+  "landing": {
+    "sub": "/From planning to execution",
+    "title": "Project development for real estate businesses.",
+    "cta": "Build with us!"
   }
 }
