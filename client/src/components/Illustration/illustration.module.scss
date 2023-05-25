@@ -10,10 +10,7 @@
 
   // Sub Title
   & h3 {
-    font-size: 0.92rem;
-    color: $accent;
-    font-family: $general-font;
-    font-weight: 500;
+    @include sub;
   }
 
   // Title

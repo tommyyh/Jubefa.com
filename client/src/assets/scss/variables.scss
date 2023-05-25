@@ -8,6 +8,7 @@ $second: #061A2F;
 $text: #4d5d6d;
 $title-lighter: #0A2540;
 $title: #051a2e;
+$primary-second: #F6F9FC;
 
 // Other
 $primary-darker: #ebeaea;
@@ -47,6 +48,13 @@ $height: 646px;
   letter-spacing: -1px;
   color: $title;
   line-height: 2.1rem;
+}
+
+@mixin sub {
+  font-size: 0.92rem;
+  color: $accent;
+  font-family: $general-font;
+  font-weight: 500;
 }
 
 @mixin text {
