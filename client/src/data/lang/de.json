@@ -82,5 +82,26 @@
     "sub": "/Was tun wir?",
     "title": "Wir sind Projektentwickler und Immobilienmakler.",
     "text": "Wir konzentrieren uns auf die Realisierung von Bauprojekten im Bereich der Revitalisierung von Brachflächen und der Sanierung von Bestandsgebäuden. Wir verstehen uns als nachhaltiges Unternehmen, weil unsere Arbeit Ressourcen wieder zugänglich macht. Gerade bei Problemimmobilien sind wir der beste Ansprechpartner."
+  },
+  "process": {
+    "sub": "/Unser Verfahren",
+    "title": "Wie wird der Prozess aussehen?",
+    "text": "Wir wissen, dass jede Immobilie einzigartig ist. Deshalb bieten wir maßgeschneiderte Lösungen zur Maximierung der Rentabilität. Unser erfahrenes Team wird mit Ihnen zusammenarbeiten, um die besten Strategien zu finden, die Ihre Immobilie zu einer erfolgreichen Investition machen. Lassen Sie uns Ihnen zu finanziellem Erfolg verhelfen.",
+    "process1": {
+      "title": "1, Konsultation",
+      "text": "Der erste Schritt in diesem Prozess ist ein Beratungsgespräch mit dem Kunden, um seine Ziele und Bedürfnisse bei der Immobilienentwicklung zu besprechen. In dieser Phase kann das Unternehmen Standortbesichtigungen durchführen und Informationen über Bebauungsvorschriften, Umweltaspekte und andere Faktoren sammeln, die sich auf das Projekt auswirken könnten."
+    },
+    "process2": {
+      "title": "2, Planung",
+      "text": "Sobald die Beratungsphase abgeschlossen ist, beginnt die Planungsphase. Dazu gehört die Erstellung eines umfassenden Plans für das Immobilienentwicklungsprojekt. In dieser Phase analysiert das Unternehmen die gesammelten Informationen, führt Machbarkeitsstudien durch, entwickelt architektonische und technische Entwürfe und formuliert einen detaillierten Zeit- und Kostenplan für das Projekt."
+    },
+    "process3": {
+      "title": "3, Umsetzung",
+      "text": "Sobald die Planung abgeschlossen ist, beginnt die Umsetzungsphase. Das Unternehmen beschafft Genehmigungen, stellt Bauunternehmer ein und überwacht den Bauprozess, um die Einhaltung der Vorschriften zu gewährleisten und etwaige Probleme zu lösen."
+    },
+    "process4": {
+      "title": "4, Unterstützung",
+      "text": "Nach Abschluss des Projekts beginnt die Support-Phase. In dieser Phase liegt der Schwerpunkt auf der laufenden Unterstützung und Wartung. Das Unternehmen kümmert sich um Gewährleistungsfragen, koordiniert Versorgungsanschlüsse und bietet Unterstützung bei der Verwaltung und Vermarktung/Vermietung der Immobilie."
+    }
   }
 }

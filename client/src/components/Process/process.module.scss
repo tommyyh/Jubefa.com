@@ -1,0 +1,87 @@
+@import '../../assets/scss/variables.scss';
+
+.process {
+  padding: 5.25rem $padding 0 $padding;
+
+  & h3 {
+    @include sub;
+  }
+
+  & h2 {
+    margin: 0 3rem 0 0;
+
+    @include titles;
+  }
+
+  & p {
+    margin: 1.15rem 0 0 0;
+
+    @include text;
+  }
+}
+
+// Bar
+.bar {
+  margin: 2.25rem 0 0 0;
+
+  & ul {
+    display: flex;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-bottom: 0.45rem;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    
+    &::-webkit-scrollbar:horizontal {
+      height: 7px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background-color: #c9c9c9;
+      border-radius: 10px;
+      border: 2px solid #ffffff;
+    }
+
+  }
+}
+
+.btn {
+  padding: 0.5rem 1.43rem;
+
+  font-size: 0.95rem;
+  color: $text-darker;
+  list-style-type: none;
+  font-weight: 500;
+  background: none;
+  border-radius: 3rem;
+  transition: 200ms ease;
+}
+
+.active {
+  background: $accent;
+  color: $btn-text;
+}
+
+// Details
+.detail {
+  margin: 2.5rem 0 0 0;
+
+  & img {
+    width: 100%;
+
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.1);
+  }
+
+  & h4 {
+    margin: 2.2rem 0 -0.7rem 0;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $title;
+    font-family: $general-font;
+    text-decoration: underline;
+  }
+}

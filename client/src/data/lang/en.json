@@ -82,5 +82,26 @@
     "sub": "/What do we do?",
     "title": "We are project developers and real estate agents.",
     "text": "We focus on realizing construction projects in the areas of revitalizing fallow land and redeveloping existing buildings. We see ourselves as a sustainable company because our work makes resources accessible again. In the case of problematic properties in particular, we are the best contact."
+  },
+  "process": {
+    "sub": "/Our process",
+    "title": "What will the process look like?",
+    "text": "We understand that every property is unique, which is why we offer tailored solutions to maximize its profitability. Our experienced team will work with you to identify the best strategies to make your property a successful investment. Let us help you achieve financial success.",
+    "process1": {
+      "title": "1, Consultation",
+      "text": "The first step in the process is a consultation with the client to discuss their real estate development goals and needs. During this phase, the company may conduct site visits and gather information on zoning regulations, environmental considerations, and other factors that could impact the project."
+    },
+    "process2": {
+      "title": "2, Planning",
+      "text": "Once the consultation phase is complete, the planning stage begins. This involves creating a comprehensive plan for the real estate development project. During this phase, the company analyzes the gathered information, conducts feasibility studies, develops architectural and engineering designs, and formulates a detailed project timeline and budget."
+    },
+    "process3": {
+      "title": "3, Implementation",
+      "text": "Once the planning is complete, the implementation phase starts. The company procures permits, hires contractors, and oversees the construction process, ensuring compliance with regulations and addressing any challenges."
+    },
+    "process4": {
+      "title": "4, Support",
+      "text": "Following project completion, the support phase begins. This stage focuses on providing ongoing assistance and maintenance. The company addresses warranty issues, coordinates utility connections, and offers guidance on property management and marketing/leasing efforts."
+    }
   }
 }

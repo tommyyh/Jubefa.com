@@ -7,6 +7,7 @@ import Landing from './components/Landing';
 import Services from 'components/Services/Services';
 import Illustration from 'components/Illustration/Illustration';
 import WhatWeDo from './components/WhatWeDo';
+import Process from 'components/Process/Process';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ const Home = () => {
       <Services lang={lang} langCode={langCode} />
       <Illustration lang={lang.profit} langCode={langCode} />
       <WhatWeDo lang={lang} langCode={langCode} />
+      <Process lang={lang} langCode={langCode} />
     </>
   );
 };
