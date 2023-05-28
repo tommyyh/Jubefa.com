@@ -9,6 +9,8 @@ import Illustration from 'components/Illustration/Illustration';
 import WhatWeDo from './components/WhatWeDo';
 import Process from 'components/Process/Process';
 import WhyUs from './components/WhyUs';
+import Reviews from 'components/Reviews/Reviews';
+import Footer from 'components/Footer/Footer';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -32,6 +34,8 @@ const Home = () => {
       <WhatWeDo lang={lang} langCode={langCode} />
       <Process lang={lang} langCode={langCode} />
       <WhyUs lang={lang} langCode={langCode} />
+      <Reviews lang={lang} langCode={langCode} />
+      <Footer lang={lang} langCode={langCode} />
     </>
   );
 };

@@ -1,0 +1,165 @@
+@import '../../assets/scss/variables.scss';
+
+.footer {
+  width: 100%;
+  padding: 7.63rem $padding 0 $padding;
+}
+
+// Top section - prompt for JUBEFA
+.top {
+  padding: 2.8rem 0;
+  position: relative;
+
+  // Grey lines - separation
+  &::before {
+    content: '';
+    position: absolute;
+    width: 39.5%;
+    height: 2px;
+    background: $separation-border;
+    left: -$padding;
+    top: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: $separation-border;
+    left: -$padding;
+    bottom: 0;
+  }
+}
+
+// Top - text
+.top {
+  & h3 {
+    margin: 0 20% 0 0;
+
+    color: $title;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
+
+// Main
+.main {
+  padding: $padding 0 ;
+
+  & a {
+    text-decoration: none;
+    color: $text;
+  }
+
+  & li {
+    margin: 0.1rem 0 0 0;
+    
+    list-style-type: none;
+    font-size: 1.05rem;
+    font-weight: 400;
+  }
+}
+
+// Links
+.links {
+  & li {
+    color: $text;
+    list-style-type: none;
+  }
+}
+
+// Info
+.info {
+  margin: 3rem 0 0 0;
+
+  & li {
+    color: $text;
+  }
+}
+
+// Info
+.newsletter {
+  margin: 3.2rem 0 0 0;
+
+  & h5 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: $text;
+  }
+}
+
+// Form
+.form {
+  display: flex;
+  align-items: center;
+
+  margin: 0.6rem 0 0 0;
+
+  & input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 1.25rem;
+
+    border-radius: 3rem;
+    border: 1.5px solid $input-border;
+    background: transparent;
+    font-size: 0.9rem;
+    color: $text;
+    font-family: $general-font;
+    font-weight: 400;
+    outline-color: $accent;
+  }
+  
+  & button {
+    min-height: 3rem;
+    min-width: 3rem;
+    margin: 0 0 0 0.6rem;
+
+    border-radius: 50%;
+    background: $accent;
+    border: none;
+    transition: ease 300ms;
+
+    // Check
+    & img {
+      width: 1.31rem;
+      height: 1.31rem;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+// Footer title
+.title {
+  margin: 0 0 0.74rem 0;
+
+  display: flex;
+  align-items: center;
+
+  & a {
+    margin: 0 0 0 0.25rem;
+
+    font-size: 1.13rem;
+    font-weight: 500;
+    color: $accent;
+    text-decoration: none;
+  }
+
+  & img {
+    width: 2.85rem;
+    height: 2.85rem;
+
+    filter: brightness(80%);
+  }
+}
+
+// Copyright
+.copyright {
+  margin: 10rem 0 0 0;
+
+  font-size: 1.07rem;
+  color: $text;
+  font-weight: 400;
+  line-height: 1.48rem;
+}

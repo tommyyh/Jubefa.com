@@ -123,5 +123,22 @@
       "title": "Kundenzufriedenheit",
       "text": "Das Unternehmen legt großen Wert auf Kundenzufriedenheit und liefert hochwertige Ergebnisse, die die Erwartungen übertreffen und die Ziele der Kunden erreichen."
     }
+  },
+  "reviews": {
+    "review1": {
+      "attestant": "Michael Behring",
+      "text": "Als die Gemeinde auf ihr Vorkaufsrecht bestand, wurde es kompliziert. Herr Flade hat das Problem aber souverän gemeistert und schlussendlich konnte der Verkauf wie geplant stattfinden.",
+      "rating": "4.8"
+    },
+    "review2": {
+      "attestant": "Andy Hanf",
+      "text": "Ich war sehr beeindruckt von der Professionalität und Effizienz des Teams. Sie haben nicht nur genau das geliefert, was versprochen wurde, sondern das Projekt auch früher als geplant abgeschlossen. Es war ein Vergnügen, mit ihnen zu arbeiten, und ich kann ihre Dienste nur empfehlen.",
+      "rating": "4.6"
+    },
+    "review3": {
+      "attestant": "Yvetta Jordacova",
+      "text": "Alles lief genau wie besprochen und wurde sogar schneller zu Ende gebracht als wir dachten.",
+      "rating": "4.5"
+    }
   }
 }

@@ -123,5 +123,47 @@
       "title": "Client Satisfaction",
       "text": "The company prioritizes client satisfaction and delivers high-quality results that exceed expectations and achieve client goals."
     }
+  },
+  "reviews": {
+    "review1": {
+      "attestant": "Michael Behring",
+      "text": "When the municipality insisted on its right of first refusal, things got complicated. But Mr. Flade mastered the problem sovereignly and finally the sale could take place as planned.",
+      "rating": "4.8"
+    },
+    "review2": {
+      "attestant": "Andy Hanf",
+      "text": "I was extremely impressed with the level of professionalism and efficiency displayed by the team. They not only delivered exactly what was promised, but also completed the project ahead of schedule. It was a pleasure working with them and I would highly recommend their services.",
+      "rating": "4.6"
+    },
+    "review3": {
+      "attestant": "Yvetta Jordacova",
+      "text": "Everything went exactly as discussed and was even completed faster than we thought.",
+      "rating": "4.5"
+    }
+  },
+  "footer": {
+    "title": "Are you in need for a real estate agent?",
+    "cta": "Let’s proceed",
+    "links": {
+      "link1": "Home",
+      "link2": "Solar panels",
+      "link3": "Contact us",
+      "link4": "Imprint",
+      "link5": "Conditions (AGB)",
+      "link6": "Data Protection"
+    },
+    "info": {
+      "email": "Email: kontakt@jubefa-immobilien.de",
+      "tel": "Tel: +49 351 27501899"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "email": "Email Address"
+    },
+    "copyright": "© Copyright 2022 JubefaGmbH. All rights reserved",
+    "invalid": "Please enter a valid email.",
+    "taken": "This email is already subscribed.",
+    "error": "Something went wrong, please try again.",
+    "success": "Successfully subscribed to our newsletter."
   }
 }
