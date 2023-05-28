@@ -1,0 +1,40 @@
+@import '../../../assets/scss/variables.scss';
+
+.why {
+  padding: 8.5rem $padding 0 $padding;
+
+  & h3 {
+    @include sub;
+  }
+
+  & h2 {
+    @include titles;
+    
+    line-height: 2rem;
+  }
+}
+
+.reasons {
+  margin: 2.5rem 0 0 0;
+}
+
+// Reason
+.reason {
+  margin: 3.5rem 0 0 0;
+
+  & img {
+    width: 5.25rem;
+  }
+
+  & h4 {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: $title;
+  }
+
+  & p {
+    @include text;
+
+    margin: 0.7rem 0 0 0;
+  }
+}

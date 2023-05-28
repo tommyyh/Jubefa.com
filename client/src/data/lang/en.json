@@ -103,5 +103,25 @@
       "title": "4, Support",
       "text": "Following project completion, the support phase begins. This stage focuses on providing ongoing assistance and maintenance. The company addresses warranty issues, coordinates utility connections, and offers guidance on property management and marketing/leasing efforts."
     }
+  },
+  "why": {
+    "sub": "/Why choose us",
+    "title": "What makes us different from our competitors?",
+    "why1": {
+      "title": "Years of experience",
+      "text": "With years of experience in real estate development, the company's team has the knowledge and expertise to handle even the most complex projects."
+    },
+    "why2": {
+      "title": "Cost-Effective Solutions",
+      "text": "The company provides cost-effective solutions that maximize investment and minimize expenses, while achieving clients' goals on budget."
+    },
+    "why3": {
+      "title": "Customer Service",
+      "text": "The company is dedicated to exceptional customer service, building strong client relationships, and ensuring satisfaction with all aspects of their services."
+    },
+    "why4": {
+      "title": "Client Satisfaction",
+      "text": "The company prioritizes client satisfaction and delivers high-quality results that exceed expectations and achieve client goals."
+    }
   }
 }

@@ -103,5 +103,25 @@
       "title": "4, Unterstützung",
       "text": "Nach Abschluss des Projekts beginnt die Support-Phase. In dieser Phase liegt der Schwerpunkt auf der laufenden Unterstützung und Wartung. Das Unternehmen kümmert sich um Gewährleistungsfragen, koordiniert Versorgungsanschlüsse und bietet Unterstützung bei der Verwaltung und Vermarktung/Vermietung der Immobilie."
     }
+  },
+  "why": {
+    "sub": "/Warum wählen Sie uns",
+    "title": "Was unterscheidet uns von unseren Mitbewerbern?",
+    "why1": {
+      "title": "Jahre der Erfahrung",
+      "text": "Mit seiner langjährigen Erfahrung in der Immobilienentwicklung verfügt das Team des Unternehmens über das Wissen und die Erfahrung, um selbst die komplexesten Projekte zu bewältigen."
+    },
+    "why2": {
+      "title": "Kosteneffiziente Lösungen",
+      "text": "Das Unternehmen bietet kosteneffiziente Lösungen, die die Investitionen maximieren und die Kosten minimieren, während die Ziele der Kunden im Rahmen des Budgets erreicht werden."
+    },
+    "why3": {
+      "title": "Kundenbetreuung",
+      "text": "Das Unternehmen hat sich einem außergewöhnlichen Kundenservice verschrieben, baut enge Kundenbeziehungen auf und stellt die Zufriedenheit seiner Kunden mit allen Aspekten seiner Dienstleistungen sicher."
+    },
+    "why4": {
+      "title": "Kundenzufriedenheit",
+      "text": "Das Unternehmen legt großen Wert auf Kundenzufriedenheit und liefert hochwertige Ergebnisse, die die Erwartungen übertreffen und die Ziele der Kunden erreichen."
+    }
   }
 }
