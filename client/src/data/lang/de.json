@@ -17,7 +17,13 @@
     "services": "Unsere Dienstleistungen",
     "projectDev": "Projektentwicklung",
     "contact": "Kontakt",
-    "cta": "Immobilien verkaufen"
+    "cta": "Immobilien verkaufen",
+    "servicesList": {
+      "first": "Immobilien Projektentwicklung",
+      "second": "Konstruktion",
+      "third": "Brachflächenrevitalisierung",
+      "forth": "Installation von Solarzellen"
+    }
   },
   "landing": {
     "sub": "/Von der Planung zur Ausführung",
@@ -139,6 +145,36 @@
       "attestant": "Yvetta Jordacova",
       "text": "Alles lief genau wie besprochen und wurde sogar schneller zu Ende gebracht als wir dachten.",
       "rating": "4.5"
+    }
+  },
+  "footer": {
+    "title": "Benötigen Sie einen Immobilienmakler?",
+    "cta": "Weiter geht's",
+    "links": {
+      "link1": "Startseite",
+      "link2": "Sonnenkollektoren",
+      "link3": "Kontakt",
+      "link4": "Impressum",
+      "link5": "AGB",
+      "link6": "Datenschutz"
+    },
+    "info": {
+      "email": "Email: kontakt@jubefa.com",
+      "tel": "Tel: +49 351 27501899"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "email": "E-Mail Adresse"
+    },
+    "copyright": "© Copyright 2022 JubefaGmbH. Alle Rechte vorbehalten"
+  },
+
+  "solar": {
+    "landing": {
+      "sub": "/Solarmodule voltaisch",
+      "title": "Steigen Sie noch heute auf Solarenergie um und sparen Sie Geld!",
+      "text": "Entscheiden Sie sich jetzt für Solar und erleben Sie die vielen Vorteile. Lassen Sie uns gemeinsam Geld sparen und einen kleineren CO2-Fußabdruck hinterlassen!",
+      "cta": "Heute in die Sonne gehen"
     }
   }
 }

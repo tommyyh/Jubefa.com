@@ -17,7 +17,13 @@
     "services": "Our Services",
     "projectDev": "Project Development",
     "contact": "Contact",
-    "cta": "Sell property"
+    "cta": "Sell property",
+    "servicesList": {
+      "first": "Real estate project development",
+      "second": "Construction",
+      "third": "Brownfields revitalization",
+      "forth": "Solar panels installation"
+    }
   },
   "landing": {
     "sub": "/From planning to execution",
@@ -153,17 +159,27 @@
       "link6": "Data Protection"
     },
     "info": {
-      "email": "Email: kontakt@jubefa-immobilien.de",
+      "email": "Email: kontakt@jubefa.com",
       "tel": "Tel: +49 351 27501899"
     },
     "newsletter": {
       "title": "Newsletter",
       "email": "Email Address"
+    }
+  },
+
+  "solar": {
+    "landing": {
+      "sub": "/Solar panels voltaic",
+      "title": "Convert to solar energy and save money today!",
+      "text": "Go solar now and experience the many benefits. Let's save money together and leave a smaller CO2 footprint behind!",
+      "cta": "Go solar today"
     },
-    "copyright": "© Copyright 2022 JubefaGmbH. All rights reserved",
-    "invalid": "Please enter a valid email.",
-    "taken": "This email is already subscribed.",
-    "error": "Something went wrong, please try again.",
-    "success": "Successfully subscribed to our newsletter."
+    "wwd": {
+      "sub": "/What we do",
+      "title": "Planning and installation of solar systems",
+      "text": "Specializing in solar system design and installation, we provide custom solutions that meet your energy needs and budget. Let us help you harness the power of the sun.",
+      "cta": "Go solar today"
+    }
   }
 }

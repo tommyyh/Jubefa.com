@@ -8,6 +8,7 @@ import {
   Navigate,
 } from 'react-router-dom';
 import Home from 'pages/Home/Home';
+import Solar from 'pages/Solar/Solar';
 import { useDispatch } from 'react-redux';
 import { setLang, setLangCode } from 'features/langSlice';
 
@@ -40,6 +41,12 @@ function App() {
           exact
           path='/:langCode'
           element={<ModifiedRoute Component={Home} />}
+        />
+
+        <Route
+          exact
+          path='/:langCode/solar'
+          element={<ModifiedRoute Component={Solar} />}
         />
       </Routes>
     </Router>

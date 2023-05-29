@@ -3,7 +3,14 @@ import css from './menu.module.scss';
 import { Link } from 'react-router-dom';
 import ArrowSVG from 'assets/icons/arrow.svg';
 
-const Menu = ({ setMenuOpen, menuOpen, logoSVG, lang, langCode }) => {
+const Menu = ({
+  setMenuOpen,
+  menuOpen,
+  logoSVG,
+  lang,
+  langCode,
+  setServicesOpen,
+}) => {
   const l = lang.nav;
 
   return (
@@ -30,9 +37,7 @@ const Menu = ({ setMenuOpen, menuOpen, logoSVG, lang, langCode }) => {
             <li>
               <Link to={`/${langCode}`}>{l.home}</Link>
             </li>
-            <li>
-              <Link to={`/${langCode}`}>{l.services}</Link>
-            </li>
+            <li onClick={() => setServicesOpen(true)}>{l.services}</li>
             <li>
               <Link to={`/${langCode}`}>{l.projectDev}</Link>
             </li>

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import css from './nav.module.scss';
 import logoSVG from 'assets/icons/logo.svg';
-import phoneSVG from 'assets/icons/phone.svg';
 import Menu from './components/Menu';
+import Services from './components/Services';
 
 const Navbar = ({ lang, langCode }) => {
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const l = lang.nav;
   const pathname = window.location.pathname.split('/');
   const url = pathname.splice(2, pathname.length).join('/'); // Full url for redirecting back with diff language
@@ -65,8 +66,15 @@ const Navbar = ({ lang, langCode }) => {
 
       <Menu
         setMenuOpen={setMenuOpen}
+        setServicesOpen={setServicesOpen}
         menuOpen={menuOpen}
         logoSVG={logoSVG}
+        lang={lang}
+        langCode={langCode}
+      />
+      <Services
+        setServicesOpen={setServicesOpen}
+        servicesOpen={servicesOpen}
         lang={lang}
         langCode={langCode}
       />

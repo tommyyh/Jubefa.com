@@ -1,0 +1,61 @@
+@import '../../../assets/scss/variables.scss';
+
+.landing {
+  padding: 6.8rem + 4.6rem $padding 8rem $padding;
+  margin: 4rem 0 0 0;
+
+  background: linear-gradient(180deg, rgba(242, 247, 252, 0) 0%, #F2F7FC 100%);
+
+  // Subtitle
+  & h3 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: $accent;
+    font-family: $general-font;
+  }
+
+  // Title
+  & h1 {
+    font-size: 1.86rem;
+    font-weight: 700;
+    color: $title-lighter;
+    letter-spacing: -1.2px;
+  }
+
+  & p {
+    margin: 1.2rem 0 -0.8rem 0;
+
+    @include text;
+    color: $text2;
+  }
+}
+
+// Graph
+.graph {
+  width: 100%;
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.1);
+}
+
+// Illustration
+.illustration {
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+  margin: 2.7rem 0 0 0;
+}
+
+.illustration1 {
+  width: 83%;
+
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.2);
+}
+
+.illustration2 {
+  position: absolute;
+  width: 28.3%;
+  left: 0;
+  bottom: -1.9rem;
+
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.2);
+}
