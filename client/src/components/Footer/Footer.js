@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Logo from 'assets/icons/logo.svg';
 import Cta from 'components/Cta/Cta';
 import checkSVG from 'assets/icons/check.svg';
+import badge1PNG from 'assets/images/badge1.png';
 
 const Footer = ({ lang, langCode }) => {
   const l = lang.footer;
@@ -74,6 +75,11 @@ const Footer = ({ lang, langCode }) => {
                   <img src={checkSVG} alt='check' />
                 </button>
               </div>
+            </div>
+
+            <div className={css['badges']}>
+              <img src={badge1PNG} alt='trust badge' />
+              <img src={badge1PNG} alt='trust badge' />
             </div>
           </div>
 

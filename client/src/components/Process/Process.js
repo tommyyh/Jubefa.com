@@ -4,7 +4,7 @@ import ProcessImg from 'assets/images/process.png';
 
 const Process = ({ langCode, lang }) => {
   const [active, setActive] = useState(1);
-  const l = lang.process;
+  const l = lang;
 
   return (
     <section className={css['process']}>

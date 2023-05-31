@@ -175,6 +175,69 @@
       "title": "Steigen Sie noch heute auf Solarenergie um und sparen Sie Geld!",
       "text": "Entscheiden Sie sich jetzt für Solar und erleben Sie die vielen Vorteile. Lassen Sie uns gemeinsam Geld sparen und einen kleineren CO2-Fußabdruck hinterlassen!",
       "cta": "Heute in die Sonne gehen"
+    },
+    "wwd": {
+      "sub": "/Was wir tun",
+      "title": "Planung und Installation von Solaranlagen",
+      "text": "Wir haben uns auf die Planung und Installation von Solarsystemen spezialisiert und bieten maßgeschneiderte Lösungen, die Ihren Energiebedarf und Ihr Budget erfüllen. Lassen Sie uns Ihnen helfen, die Kraft der Sonne zu nutzen.",
+      "cta": "Heute in die Sonne gehen"
+    },
+    "roofs": {
+      "sub": "/Was wir unterstützen",
+      "title": "Welche Arten von Dächern unterstützen wir?",
+      "roof1": {
+        "title": "Dächer aus Asphalt",
+        "text": "Wir haben uns auf die Installation von Sonnenkollektoren auf Asphaltdächern spezialisiert, die Ihnen saubere Energie und Kosteneinsparungen bieten."
+      },
+      "roof2": {
+        "title": "Metalldächer",
+        "text": "Unsere Experten können Solarmodule auf Metalldächern aller Art installieren und Ihnen so helfen, Energiekosten zu sparen und Ihren ökologischen Fußabdruck zu verringern."
+      },
+      "roof3": {
+        "title": "Ziegeldächer",
+        "text": "Mit unserer maßgeschneiderten Solarpanel-Installation können Sie die Kraft der Sonne auf Ihrem Ziegeldach nutzen und gleichzeitig dessen Ästhetik erhalten."
+      },
+      "roof4": {
+        "title": "Flachdächer",
+        "text": "Wir bieten eine effiziente und zuverlässige Installation von Solarmodulen auf Flachdächern, die es Ihnen leicht macht, Ihren eigenen Strom zu erzeugen."
+      }
+    },
+    "cost": {
+      "sub": "/Geld sparen mit Solar",
+      "title": "Wie viel werden Sie mit Solarenergie sparen?",
+      "text": "Wir wissen, dass jede Immobilie einzigartig ist. Deshalb bieten wir maßgeschneiderte Lösungen zur Maximierung der Rentabilität. Unser erfahrenes Team wird mit Ihnen zusammenarbeiten, um die besten Strategien zu finden, die Ihre Immobilie zu einer erfolgreichen Investition machen. Lassen Sie uns Ihnen zu finanziellem Erfolg verhelfen.",
+      "cta": "Mehr erfahren"
+    },
+    "price": {
+      "sub": "/Solarmodulkosten",
+      "title": "Wie viel werden unsere Solarmodule Sie kosten?",
+      "text": "Wir haben uns auf die Planung und Installation von Solarsystemen spezialisiert und bieten maßgeschneiderte Lösungen, die Ihren Energiebedarf und Ihr Budget erfüllen. Lassen Sie uns Ihnen helfen, die Kraft der Sonne zu nutzen.",
+      "cta": "Schreiben Sie uns eine Nachricht"
+    },
+    "process": {
+      "sub": "/Unser Verfahren - Solarbleiche",
+      "title": "Wie wird die Installation von Sonnenkollektoren aussehen?",
+      "text": "Von der Beratung bis zur Fertigstellung bieten wir optimierte Projektentwicklungslösungen für den Immobilienbau. Unser umfassender Ansatz beinhaltet Beratung, Planung, Umsetzung und laufende Unterstützung, damit unsere Kunden ihre Entwicklungsziele erreichen können.",
+      "process1": {
+        "title": "1, Konsultation",
+        "text": "In einem ersten Schritt beraten wir unsere Kunden, um ihre Bedürfnisse und Ziele in Bezug auf Solarmodule zu verstehen. Wir führen Standortbesichtigungen durch und sammeln wichtige Informationen, z. B. über Bebauungsvorschriften und Umweltaspekte."
+      },
+      "process2": {
+        "title": "2, Planung",
+        "text": "In der Planungsphase entwerfen wir ein individuelles Solarmodulsystem. Wir analysieren den Energieverbrauch, den verfügbaren Platz und die örtlichen Vorschriften, um ein optimales Layout zu erstellen. Die Kunden nehmen aktiv an der Überprüfung und Fertigstellung des Entwurfs teil."
+      },
+      "process3": {
+        "title": "3, Umsetzung",
+        "text": "Sobald der Entwurf genehmigt ist, kümmern wir uns um die Logistik der Materialbeschaffung, die Einholung von Genehmigungen und die Planung des Installationsteams. Unsere erfahrenen Techniker montieren die Paneele sicher, schließen sie an das elektrische System an und integrieren die erforderlichen Komponenten."
+      },
+      "process4": {
+        "title": "4, Unterstützung",
+        "text": "Unsere Unterstützung geht über die Installation hinaus. Wir überwachen die Energieproduktion, führen regelmäßige Wartungsarbeiten durch und kümmern uns umgehend um alle auftretenden Probleme. Wir bieten Anleitungen für den Betrieb und die Wartung des Systems und bieten Garantien und Unterstützung bei möglichen Erweiterungen oder Aufrüstungen."
+      }
+    },
+    "video": {
+      "sub": "/Einführung",
+      "title": "Unser Video abspielen"
     }
   }
 }

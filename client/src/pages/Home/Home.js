@@ -32,7 +32,7 @@ const Home = () => {
       <Services lang={lang} langCode={langCode} />
       <Illustration lang={lang.profit} langCode={langCode} />
       <WhatWeDo lang={lang} langCode={langCode} />
-      <Process lang={lang} langCode={langCode} />
+      <Process lang={lang.process} langCode={langCode} />
       <WhyUs lang={lang} langCode={langCode} />
       <Reviews lang={lang} langCode={langCode} />
       <Footer lang={lang} langCode={langCode} />

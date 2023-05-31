@@ -1,0 +1,22 @@
+@import '../../../assets/scss/variables.scss';
+
+.video {
+  padding: 8rem 0 0 0;
+
+  & h3 {
+    @include sub;
+  }
+
+  & h2 {
+    @include titles;
+  }
+
+  & video {
+    margin: 1.4rem 0 0 0;
+    width: 100%;
+  }
+}
+
+.top {
+  padding: 0 $padding;
+}

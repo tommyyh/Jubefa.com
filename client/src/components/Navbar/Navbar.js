@@ -3,6 +3,7 @@ import css from './nav.module.scss';
 import logoSVG from 'assets/icons/logo.svg';
 import Menu from './components/Menu';
 import Services from './components/Services';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ lang, langCode }) => {
   const [langOpen, setLangOpen] = useState(false);
@@ -15,11 +16,11 @@ const Navbar = ({ lang, langCode }) => {
   return (
     <>
       <nav className={css['nav']}>
-        <div className={css['title']}>
+        <Link to={`/${langCode}`} className={css['title']}>
           <img src={logoSVG} alt='logo' />
 
           <h2>{l.title}</h2>
-        </div>
+        </Link>
 
         <div className={css['right']}>
           <svg

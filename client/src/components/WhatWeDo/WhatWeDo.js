@@ -2,11 +2,9 @@ import React from 'react';
 import css from './whatwedo.module.scss';
 import Cta from 'components/Cta/Cta';
 import variablesJSON from 'data/variables/variables.json';
-import wwd1PNG from 'assets/images/solar/wwd1.png';
-import wwd2PNG from 'assets/images/solar/wwd2.png';
 
-const WhatWeDo = ({ langCode, lang }) => {
-  const l = lang.solar.wwd;
+const WhatWeDo = ({ langCode, lang, img1, img2 }) => {
+  const l = lang;
 
   return (
     <section className={css['wwd']}>
@@ -22,8 +20,8 @@ const WhatWeDo = ({ langCode, lang }) => {
         />
 
         <div className={css['images']}>
-          <img src={wwd1PNG} alt='solar' />
-          <img src={wwd2PNG} alt='solar' />
+          <img src={img1} alt='solar' />
+          <img src={img2} alt='solar' />
         </div>
       </div>
     </section>

@@ -165,7 +165,8 @@
     "newsletter": {
       "title": "Newsletter",
       "email": "Email Address"
-    }
+    },
+    "copyright": "© Copyright 2022 JubefaGmbH. All rights reserved"
   },
 
   "solar": {
@@ -180,6 +181,63 @@
       "title": "Planning and installation of solar systems",
       "text": "Specializing in solar system design and installation, we provide custom solutions that meet your energy needs and budget. Let us help you harness the power of the sun.",
       "cta": "Go solar today"
+    },
+    "roofs": {
+      "sub": "/What we support",
+      "title": "What types of roofs do we support?",
+      "roof1": {
+        "title": "Asphalt roofs",
+        "text": "We specialize in installing solar panels on asphalt roofs, providing you with clean energy and cost savings."
+      },
+      "roof2": {
+        "title": "Metal Roofs",
+        "text": "Our experts can install solar panels on metal roofs of all types, helping you save on energy bills and reduce your carbon footprint."
+      },
+      "roof3": {
+        "title": "Tile roofs",
+        "text": "With our custom solar panel installation, you can harness the power of the sun on your tile roof while maintaining its aesthetic appeal."
+      },
+      "roof4": {
+        "title": "Flat roofs",
+        "text": "We offer efficient and reliable solar panel installation on flat roofs, making it easy for you to generate your own electricity."
+      }
+    },
+    "cost": {
+      "sub": "/Save money with solar",
+      "title": "How much will you save with solar energy?",
+      "text": "We understand that every property is unique, which is why we offer tailored solutions to maximize its profitability. Our experienced team will work with you to identify the best strategies to make your property a successful investment. Let us help you achieve financial success.",
+      "cta": "Learn more"
+    },
+    "price": {
+      "sub": "/Solar panel cost",
+      "title": "How much will our solar panels cost you?",
+      "text": "Specializing in solar system design and installation, we provide custom solutions that meet your energy needs and budget. Let us help you harness the power of the sun.",
+      "cta": "Write us a message"
+    },
+    "process": {
+      "sub": "/Our process - solar pales",
+      "title": "How will the installation of solar panels look like?",
+      "text": "From consultation to completion, we provide streamlined project development solutions for real estate construction. Our comprehensive approach includes consultation, planning, implementation, and ongoing support to help clients achieve their development goals.",
+      "process1": {
+        "title": "1, Consultation",
+        "text": "In the first step, we consult with clients to understand their solar panel needs and goals. We conduct site visits and gather essential information, such as zoning regulations and environmental considerations."
+      },
+      "process2": {
+        "title": "2, Planning",
+        "text": "The planning phase involves designing a personalized solar panel system. We analyze energy consumption, available space, and local regulations to create an optimized layout. Clients actively participate in reviewing and finalizing the design."
+      },
+      "process3": {
+        "title": "3, Implementation",
+        "text": "Once the design is approved, we handle the logistics of procuring materials, obtaining permits, and scheduling the installation team. Our experienced technicians securely mount the panels, connect them to the electrical system, and integrate necessary components."
+      },
+      "process4": {
+        "title": "4, Support",
+        "text": "Our support extends beyond installation. We monitor energy production, conduct regular maintenance, and promptly address any issues that arise. We offer guidance on system operation, maintenance practices, and provide warranties and assistance for potential expansions or upgrades."
+      }
+    },
+    "video": {
+      "sub": "/Introduction",
+      "title": "Play our video"
     }
   }
 }
