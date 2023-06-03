@@ -4,7 +4,7 @@
   display: flex;
   
   overflow-x: scroll;
-  margin: 3rem $padding 0 $padding;
+  margin: 3rem 0 0 $padding;
   padding: 0 0 0.88rem 0;
 }
 
@@ -77,4 +77,107 @@
     margin: -1px 0 0 0.67rem;
     width: 0.467rem;
   }
+}
+
+// Desktop view
+@media all and (min-width: 1025px) {
+  .services {
+    display: flex;
+    
+    overflow-x: scroll;
+    margin: 3.5rem 0 0 $padding;
+    padding: 0 0 1.2rem 0;
+
+    /* width */
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f5f5f5;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #dadada;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #c9c9c9;
+    }
+  }
+  
+  // Call to action (Purple box)
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    width: 100%;
+    max-width: 31rem;
+    min-width: 31rem;
+    height: 24.25rem;
+    padding: 1.7rem 2rem;
+    margin: 0 0 0 $padding;
+    position: relative;
+  
+    border-radius: 1.37rem;
+    background: $service5-bg;
+  
+    // Title
+    & h3 {
+      margin: 0.15rem 1rem 0 1rem;
+  
+      font-size: 2rem;
+      font-family: $general-font;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $service5-main;
+    }
+  
+    // Text
+    & p {
+      margin: 1.25rem 0 0 0;
+  
+      color: $service5-text;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.62rem;
+    }
+  }
+  
+  // Position
+  .position {
+    font-family: $general-font;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: $service5-sub;
+  }
+  
+  // Button
+  .btn {
+    display: flex;
+    align-items: center;
+  
+    padding: 0.47rem 1.2rem 0.4rem 1.2rem;
+    margin: 1.9rem 0 0;
+    
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    background: $service5-cta;
+    color: $btn-text;
+    text-decoration: none;
+    font-size: 0.88rem;
+    
+    & img {
+      margin: -1px 0 0 0.67rem;
+      width: 0.467rem;
+    }
+  }
+
 }
