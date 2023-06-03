@@ -103,3 +103,125 @@
     }
   }
 }
+
+// Desktop view
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 68% 32%;
+    
+    width: $width;
+    padding: 16rem $padding2 0 $padding2;
+  
+    // Subtitle
+    & h3 {
+      margin: 0 0 2.5px 0;
+  
+      font-size: 0.98rem;
+      font-weight: 400;
+      color: $text2;
+      font-family: $general-font;
+    }
+  
+    // Title
+    & h1 {
+      margin: -0.4rem 0 0 -4px;
+      max-width: initial;
+  
+      font-size: 4rem;
+      font-weight: 600;
+      color: $title;
+      letter-spacing: -1.4px;
+      
+      & span:last-child {
+        display: flex;
+        justify-content: flex-end;
+  
+        width: 100%;
+      }
+    }
+  }
+  
+  // CTA
+  .cta {
+    display: flex;
+  
+    padding: 0rem 0 0 0;
+    margin: 1.3rem 0 0 2.3rem;
+  
+    text-decoration: none;
+  
+    // Chevron main
+    & .cta-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      width: 8.25rem;
+      height: 8.25rem;
+      margin: 0 0 0 0.73rem;
+  
+      background: $accent;
+      border-radius: 50%;
+
+      & img {
+        transform: scale(1.65);
+      }
+    }
+  }
+  
+  // Bubble
+  .cta-bubble {
+    padding: 0 0 0 1.6rem;
+    margin: -2.55rem 0 0 -1rem;
+  
+    // Main
+    & h4 {
+      width: fit-content;
+      padding: 0.46rem 1.42rem;
+      margin: 0.73rem 0 0 0;
+  
+      font-family: $general-font;
+      font-weight: 500;
+      font-size: 0.79rem;
+      color: $btn-text;
+      background: $accent;
+      border-radius: 3.1rem;
+    }
+  
+    & .cta-dot {
+      width: 8px;
+      height: 8px;
+      margin: -1px 0 0 -2.9px;
+      position: relative;
+  
+      background: $accent;
+      border-radius: 50%;
+  
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        margin: -0.9px 0 0 -2.76px;
+        left: -4.2px;
+        bottom: -4.2px;
+    
+        background: $accent;
+        border-radius: 50%;
+      }
+  
+      &::after {
+        width: 4px;
+        height: 4px;
+        left: -9.2px;
+        bottom: -7.5px;
+      }
+    }
+  }
+
+}
