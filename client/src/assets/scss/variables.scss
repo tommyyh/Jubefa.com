@@ -3,6 +3,7 @@ $header-font: 'Raleway', sans-serif;
 
 // Colors - main
 $accent: #133A75;
+$accent-hover: #184283;
 $accent2: #64A2FF;
 $primary: #fff;
 $second: #061A2F;
@@ -16,10 +17,11 @@ $text-darker: #4B5661;
 // Other
 $primary-darker: #ebeaea;
 $btn-text: #fff;
-$separation-border: #dcdcdb;
+$separation-border: #e7e7e6;
 $input-border: #99A19C;
 $accent2-title: #fff;
 $accent2-text: #C4C9CD;
+$primary-hover: #eeeeee;
 
 // Services
 $service1-bg: #fbf4f2;
@@ -67,4 +69,12 @@ $height: 646px;
   font-size: 0.99rem;
   font-weight: 300;
   color: $text;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  width: 100%;
 }
