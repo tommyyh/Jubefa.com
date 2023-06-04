@@ -176,3 +176,209 @@
     margin: 0 0 0 -7px;
   }
 }
+
+@media all and (min-width: 1025px) {
+  .footer {
+    width: 100%;
+    padding: 7.63rem $padding2 0 $padding2;
+  }
+  
+  // Top section - prompt for JUBEFA
+  .top-inner {
+    width: $width;
+    padding: 2.8rem 1.88rem;
+  }
+
+  .top {
+    @include center;
+
+    padding: initial;
+    position: relative;
+  
+    // Grey lines - separation
+    &::before {
+      content: '';
+      position: absolute;
+      width: 34%;
+      height: 2px;
+      background: $separation-border;
+      left: -$padding;
+      top: 0;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: $separation-border;
+      left: -$padding;
+      bottom: 0;
+    }
+  }
+  
+  // Top - text
+  .top {
+    & a {
+      margin: 1.6rem 0 0 0 !important;
+    }
+
+    & h3 {
+      font-size: 1.45rem;
+      font-weight: 600;
+      line-height: 1.78rem;
+
+      & span {
+        display: block;
+      }
+    }
+  }
+  
+  // Main
+  .cont {
+    @include center;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 23.5% 33% 28%;
+  }
+
+  .main {
+    width: $width;
+    padding: $padding + 0.6rem 1.88rem;
+  
+    & a {
+      width: fit-content;
+
+      text-decoration: none;
+      color: $text;
+    }
+  
+    & li {
+      margin: 0.4rem 0 0 0;
+      width: fit-content;
+  
+      list-style-type: none;
+      font-size: 1rem;
+      font-weight: 400;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  // Links
+  .links {
+    & li {
+      list-style-type: none;
+    }
+
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  // Info
+  .info {
+    margin: 0rem 0 0 0;
+
+    color: $text;
+  }
+  
+  // Info
+  .newsletter {
+    margin: 0rem 0 0 0;
+  
+    & h5 {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: $text;
+    }
+  }
+  
+  // Form
+  .form {
+    display: flex;
+    align-items: center;
+  
+    margin: 0.25rem 0 0 0;
+  
+    & input {
+      width: 100%;
+      height: 2.68rem;
+      padding: 0 1.25rem;
+  
+      border-radius: 3rem;
+      border: 1.5px solid $input-border;
+      background: transparent;
+      font-size: 0.83rem;
+      color: $text;
+      font-family: $general-font;
+      font-weight: 400;
+      outline-color: $accent;
+    }
+    
+    & button {
+      min-height: 3rem;
+      min-width: 3rem;
+      margin: 0 0 0 0.6rem;
+  
+      border-radius: 50%;
+      background: $accent;
+      border: none;
+      transition: 300ms ease;
+
+      &:hover img {
+        transform: rotate(360deg);
+      }
+  
+      // Check
+      & img {
+        width: 1.31rem;
+        height: 1.31rem;
+        margin: 5px 0 0 0;
+        position: relative;
+        transition: 300ms ease;
+      }
+    }
+  }
+  
+  // Footer title
+  .title {
+    margin: 0 0 0.83rem 0;
+  
+    display: flex;
+    align-items: center;
+
+    & a {
+      margin: 0 0 0 0.35rem;
+  
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $accent;
+      transition: 250ms ease;
+      text-decoration: none;
+    }
+  
+    & img {
+      width: 2.5rem;
+      height: 2.5rem;
+  
+      filter: brightness(80%);
+    }
+  }
+  
+  // Copyright
+  .copyright {
+    margin: 10rem 0 0 0;
+  
+    font-size: 1.07rem;
+    color: $text;
+    font-weight: 400;
+    line-height: 1.48rem;
+  }
+
+}

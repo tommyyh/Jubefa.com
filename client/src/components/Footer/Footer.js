@@ -12,8 +12,10 @@ const Footer = ({ lang, langCode }) => {
   return (
     <footer className={css['footer']}>
       <div className={css['top']}>
-        <h3>{l.title}</h3>
-        <Cta link={`/${langCode}`} title={l.cta} />
+        <div className={css['top-inner']}>
+          <h3>{l.title}</h3>
+          <Cta link={`/${langCode}`} title={l.cta} />
+        </div>
       </div>
 
       <div className={css['cont']}>
@@ -75,11 +77,11 @@ const Footer = ({ lang, langCode }) => {
                   <img src={checkSVG} alt='check' />
                 </button>
               </div>
-            </div>
 
-            <div className={css['badges']}>
-              <img src={badge1PNG} alt='trust badge' />
-              <img src={badge1PNG} alt='trust badge' />
+              <div className={css['badges']}>
+                <img src={badge1PNG} alt='trust badge' />
+                <img src={badge1PNG} alt='trust badge' />
+              </div>
             </div>
           </div>
 
