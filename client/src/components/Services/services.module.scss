@@ -92,6 +92,11 @@
     overflow-x: auto;
     margin: 3.5rem 0 0 $padding;
     padding: 0 0 1.2rem 0;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
 
     /* width */
     &::-webkit-scrollbar {

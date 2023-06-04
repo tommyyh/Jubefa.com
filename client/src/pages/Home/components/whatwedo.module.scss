@@ -77,11 +77,12 @@
     // Title
     & h2 {
       @include titles2;
+      margin: 0 2rem 0 0;
     }
   
     // Text
     & p {
-      margin: 1.8rem 0 0 0;
+      margin: 1.4rem 0 0 0;
   
       @include text2;
     }
@@ -90,7 +91,7 @@
   // Text cont
   .text {
     display: grid;
-    grid-template-columns: 30% 42%;
+    grid-template-columns: 34% 42%;
   }
   
   // Images

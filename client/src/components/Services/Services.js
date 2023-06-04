@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import css from './services.module.scss';
 import Service from './components/Service';
 import service1IMG from 'assets/images/service1.png';
@@ -8,12 +8,50 @@ import service4IMG from 'assets/images/service4.png';
 import { Link } from 'react-router-dom';
 import arrowSVG from 'assets/icons/arrow.svg';
 
-const Services = ({ langCode, lang }) => {
+const Services = ({ langCode, lang, isDesktop }) => {
   const l = lang.services;
+  const scrollableRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [prevX, setPrevX] = useState(0);
+
+  useEffect(() => {
+    if (!isDesktop) return;
+
+    const scrollableDiv = scrollableRef.current;
+
+    const handleMouseDown = (event) => {
+      setIsDragging(true);
+      setPrevX(event.clientX);
+      event.preventDefault();
+    };
+
+    const handleMouseMove = (event) => {
+      if (isDragging) {
+        const deltaX = event.clientX - prevX;
+        scrollableDiv.scrollLeft -= deltaX;
+        setPrevX(event.clientX);
+        event.preventDefault();
+      }
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+
+    scrollableDiv.addEventListener('mousedown', handleMouseDown);
+    scrollableDiv.addEventListener('mousemove', handleMouseMove);
+    scrollableDiv.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      scrollableDiv.removeEventListener('mousedown', handleMouseDown);
+      scrollableDiv.removeEventListener('mousemove', handleMouseMove);
+      scrollableDiv.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isDragging, prevX]);
 
   return (
     <div className={css['cont']}>
-      <section className={css['services']}>
+      <section className={css['services']} ref={scrollableRef}>
         <Service langCode={langCode} l={l.service1} img={service1IMG} />
         <Service langCode={langCode} l={l.service2} img={service2IMG} />
         <Service langCode={langCode} l={l.service3} img={service3IMG} />
