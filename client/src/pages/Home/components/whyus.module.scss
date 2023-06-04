@@ -38,3 +38,55 @@
     margin: 0.7rem 0 0 0;
   }
 }
+
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+  }
+
+  .why {
+    width: $width;
+    padding: 8.5rem $padding2 0 $padding2;
+  
+    & h3 {
+      @include sub2;
+    }
+  
+    & h2 {
+      @include titles2;
+      
+      line-height: initial;
+      margin: 0 50% 0 0;
+    }
+  }
+  
+  .reasons {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    justify-content: space-between;
+
+    margin: 0rem 0 0 0;
+  }
+  
+  // Reason
+  .reason {
+    margin: 3.5rem 0 0 0;
+  
+    & img {
+      width: 5.25rem;
+    }
+  
+    & h4 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: $title;
+    }
+  
+    & p {
+      @include text;
+  
+      margin: 0.7rem 0 0 0;
+    }
+  }
+
+}
