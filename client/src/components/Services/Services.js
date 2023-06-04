@@ -12,13 +12,15 @@ const Services = ({ langCode, lang }) => {
   const l = lang.services;
 
   return (
-    <section className={css['services']}>
-      <Service langCode={langCode} l={l.service1} img={service1IMG} />
-      <Service langCode={langCode} l={l.service2} img={service2IMG} />
-      <Service langCode={langCode} l={l.service3} img={service3IMG} />
-      <Service langCode={langCode} l={l.service4} img={service4IMG} />
-      <CTA langCode={langCode} l={l.service5} />
-    </section>
+    <div className={css['cont']}>
+      <section className={css['services']}>
+        <Service langCode={langCode} l={l.service1} img={service1IMG} />
+        <Service langCode={langCode} l={l.service2} img={service2IMG} />
+        <Service langCode={langCode} l={l.service3} img={service3IMG} />
+        <Service langCode={langCode} l={l.service4} img={service4IMG} />
+        <CTA langCode={langCode} l={l.service5} />
+      </section>
+    </div>
   );
 };
 

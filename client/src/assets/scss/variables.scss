@@ -78,3 +78,25 @@ $height: 646px;
 
   width: 100%;
 }
+
+// DESKTOP VALUES
+@mixin titles2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: $title;
+  line-height: 2.78rem;
+}
+
+@mixin sub2 {
+  font-size: 1.1rem;
+  color: $accent;
+  font-family: $general-font;
+  font-weight: 500;
+}
+
+@mixin text2 {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: $text2;
+}
