@@ -3,3 +3,103 @@
 .reviews {
   padding: 9.5rem $padding 0 $padding;
 }
+
+.prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+  padding: 3rem 2rem 3rem 2rem;
+  margin: 3rem 0 0 0;
+  
+  border-radius: 13px;
+  background: $service5-bg;
+
+  & h4 {
+    @include sub;
+
+    color: $service5-sub;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  & h3 {
+    @include titles2;
+    margin: -6px 0 0 0;
+
+    color: $service5-main;
+    font-family: $general-font;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  & p {
+    @include text2;
+    margin: 0.5rem 0 0 0;
+
+    color: $service5-text;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+  }
+
+  .reviews {
+    width: $width;
+    padding: 11rem $padding2 0 $padding2;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 22.9% 22.9% 22.9% 22.9%;
+    justify-content: space-between;
+  }
+  
+  .prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    width: 100%;
+    padding: 3rem 2rem 3rem 2rem;
+    margin: 0 0 0 0;
+    height: fit-content;
+    
+    border-radius: 13px;
+    background: $service5-bg;
+  
+    & h4 {
+      @include sub;
+  
+      color: $service5-sub;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  
+    & h3 {
+      @include titles2;
+      margin: -10px 0 0 0;
+  
+      color: $service5-main;
+      font-family: $general-font;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  
+    & p {
+      @include text2;
+      margin: 0.3rem 0 0 0;
+  
+      font-size: 0.82rem;
+      color: $service5-text;
+    }
+  }
+
+}

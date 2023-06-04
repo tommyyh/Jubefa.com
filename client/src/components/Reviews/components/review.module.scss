@@ -49,3 +49,60 @@
     font-family: $general-font;
   }
 }
+
+@media all and (min-width: 1025px) {
+  .review {
+    width: 100%;
+    padding: 0 1.28rem 2rem 1.28rem;
+    margin: 0 0 0 0;
+    height: fit-content;
+    
+    box-shadow: 0px 4px 75px rgb(0, 0, 0, 0.1);
+    border-radius: 13px;
+  
+    &:first-child {
+      margin: 0rem 0 0 0;
+    }
+  }
+  
+  // Attestant img
+  .review img {
+    width: 7rem;
+    height: 7rem;
+    margin: -17% 0 0 0;
+    
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 9px 21px rgb(0, 0, 0, 0.15);
+  }
+  
+  // Content
+  .content {
+    margin: 1.4rem 0 0 0;
+  
+    & h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $title;
+      font-family: $general-font;
+    }
+  
+    & p {
+      @include text;
+      
+      font-size: 0.82rem;
+      margin: 0.5rem 0 0 0;
+    }
+  
+    // Rating
+    & h4 {
+      margin: 2rem 0 0 0;
+  
+      font-size: 1.1rem;
+      color: $accent;
+      font-weight: 500;
+      font-family: $general-font;
+    }
+  }
+
+}

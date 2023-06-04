@@ -145,6 +145,12 @@
       "attestant": "Yvetta Jordacova",
       "text": "Everything went exactly as discussed and was even completed faster than we thought.",
       "rating": "4.5"
+    },
+    "prompt": {
+      "sub": "Feedback",
+      "title": "Leave a review!",
+      "text": "Share your experience! Leave us a review to help us improve our services.",
+      "cta": "Leave a review"
     }
   },
   "footer": {

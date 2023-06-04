@@ -145,6 +145,12 @@
       "attestant": "Yvetta Jordacova",
       "text": "Alles lief genau wie besprochen und wurde sogar schneller zu Ende gebracht als wir dachten.",
       "rating": "4.5"
+    },
+    "prompt": {
+      "sub": "Rückmeldung",
+      "title": "Hinterlassen Sie eine Bewertung!",
+      "text": "Teilen Sie Ihre Erfahrungen! Hinterlassen Sie uns eine Bewertung und helfen Sie uns, unsere Dienstleistungen zu verbessern.",
+      "cta": "Eine Bewertung abgeben"
     }
   },
   "footer": {
