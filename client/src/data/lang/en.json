@@ -13,10 +13,10 @@
   "nav": {
     "title": "Jubefa",
     "close": "close",
-    "home": "Home",
+    "home": "Home Page",
     "services": "Our Services",
     "projectDev": "Project Development",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "cta": "Sell property",
     "servicesList": {
       "first": "Real estate project development",
@@ -153,6 +153,20 @@
       "cta": "Leave a review"
     }
   },
+  "contact": {
+    "sub": "Contact Us",
+    "title": "Get in touch with us!",
+    "close": "close",
+    "name": "Your name",
+    "email": "Email address",
+    "msg": "Your messages",
+    "submit": "Send message",
+    "processing": "Processing...",
+    "missing": "Please fill out all fields.",
+    "invalidMail": "Please enter a valid email address.",
+    "success": "👍 Message was successfully sent! We will get back to you as soon as we can.",
+    "serverError": "👎 Something went wrong with our servers, please try again in a few moments or contact us directly: info@jubefa.de"
+  },
   "footer": {
     "title": "Are you in need for a real estate agent?",
     "cta": "Let’s proceed",
@@ -172,7 +186,11 @@
       "title": "Newsletter",
       "email": "Email Address"
     },
-    "copyright": "© Copyright 2022 JubefaGmbH. All rights reserved"
+    "copyright": "© Copyright 2022 JubefaGmbH. All rights reserved",
+    "invalid": "Please enter a valid email.",
+    "taken": "This email is already subscribed.",
+    "error": "Something went wrong, please try again.",
+    "success": "Successfully subscribed to our newsletter."
   },
 
   "solar": {

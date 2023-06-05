@@ -59,3 +59,79 @@
 
   box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.2);
 }
+
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+
+    background: linear-gradient(180deg, rgba(242, 247, 252, 0) 0%, #F2F7FC 100%);
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 47% 50%;
+    justify-content: space-between;
+    width: $width;
+    padding: 6.8rem + 4.6rem $padding2 12rem $padding2;
+    margin: 3.3rem 0 0 0;
+  
+    background: none;
+  
+    // Subtitle
+    & h3 {
+      font-size: 0.88rem;
+      font-weight: 400;
+      color: $accent;
+      font-family: $general-font;
+    }
+  
+    // Title
+    & h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $title;
+      letter-spacing: -1.2px;
+      line-height: 2.69rem;
+    }
+  
+    & p {
+      margin: 1.2rem 30% 0 0;
+  
+      @include text2;
+      color: $text2;
+      font-size: 0.88rem;
+      line-height: 1.3rem;
+    }
+  }
+  
+  // Graph
+  .graph {
+    width: 100%;
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Illustration
+  .illustration {
+    display: flex;
+    justify-content: flex-end;
+  
+    position: relative;
+    margin: -1.3rem 0 0 0;
+  }
+  
+  .illustration1 {
+    width: 83%;
+  
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.2);
+  }
+  
+  .illustration2 {
+    position: absolute;
+    width: 28.3%;
+    left: 0;
+    bottom: -3.1rem;
+  
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.2);
+  }
+  
+}

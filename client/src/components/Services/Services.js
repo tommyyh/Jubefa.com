@@ -7,8 +7,9 @@ import service3IMG from 'assets/images/service3.png';
 import service4IMG from 'assets/images/service4.png';
 import { Link } from 'react-router-dom';
 import arrowSVG from 'assets/icons/arrow.svg';
+import { setLangCode } from 'features/langSlice';
 
-const Services = ({ langCode, lang, isDesktop }) => {
+const Services = ({ langCode, lang, isDesktop, setContactOpen }) => {
   const l = lang.services;
   const scrollableRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -52,27 +53,41 @@ const Services = ({ langCode, lang, isDesktop }) => {
   return (
     <div className={css['cont']}>
       <section className={css['services']} ref={scrollableRef}>
-        <Service langCode={langCode} l={l.service1} img={service1IMG} />
+        <Service
+          langCode={langCode}
+          l={l.service1}
+          link={`/${langCode}`}
+          img={service1IMG}
+        />
         <Service langCode={langCode} l={l.service2} img={service2IMG} />
         <Service langCode={langCode} l={l.service3} img={service3IMG} />
-        <Service langCode={langCode} l={l.service4} img={service4IMG} />
-        <CTA langCode={langCode} l={l.service5} />
+        <Service
+          langCode={langCode}
+          l={l.service4}
+          link={`/${langCode}/solar`}
+          img={service4IMG}
+        />
+        <CTA
+          langCode={langCode}
+          l={l.service5}
+          setContactOpen={setContactOpen}
+        />
       </section>
     </div>
   );
 };
 
-const CTA = ({ langCode, l }) => {
+const CTA = ({ langCode, l, setContactOpen }) => {
   return (
     <div className={css['cta']}>
       <h5 className={css['position']}>{l.position}</h5>
       <h3>{l.title}</h3>
       <p>{l.text}</p>
 
-      <Link to={`/${langCode}/`} className={css['btn']}>
+      <div className={css['btn']} onClick={() => setContactOpen(true)}>
         <span>{l.cta}</span>
         <img src={arrowSVG} alt='chevron' />
-      </Link>
+      </div>
     </div>
   );
 };

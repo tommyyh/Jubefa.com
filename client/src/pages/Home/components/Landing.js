@@ -3,7 +3,7 @@ import css from './landing.module.scss';
 import { Link } from 'react-router-dom';
 import ChevronSVG from 'assets/icons/chevron.svg';
 
-const Landing = ({ langCode, lang }) => {
+const Landing = ({ langCode, lang, setContactOpen }) => {
   const l = lang.landing;
   const slicePosition = langCode === 'de' ? 2 : 3; // If its EN slice the title at a different position due to different lengths
 
@@ -24,7 +24,11 @@ const Landing = ({ langCode, lang }) => {
           </h1>
         </div>
 
-        <Link to={`/${langCode}/`} className={css['cta']}>
+        <Link
+          to={``}
+          onClick={() => setContactOpen(true)}
+          className={css['cta']}
+        >
           <div className={css['cta-main']}>
             <img src={ChevronSVG} alt='chevron' />
           </div>

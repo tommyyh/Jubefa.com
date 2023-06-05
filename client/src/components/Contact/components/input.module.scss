@@ -1,0 +1,95 @@
+@import '../../../assets/scss/variables.scss';
+
+// Input
+.input {
+  width: 100%;
+
+  & input {
+    width: 100%;
+    height: 4.2rem;
+    margin: 0rem 0 0 0;
+    padding: 0 1rem;
+
+    border: none;
+    border-bottom: 1.5px solid $separation-border-dark;
+    font-family: $general-font;
+    outline: $accent;
+    color: $accent;
+    font-size: 0.97rem;
+    background: $primary;
+
+    &::placeholder {
+      color: $accent;
+    }
+  }
+  
+  & textarea {
+    width: 100%;
+    height: 7rem;
+    padding: 0.82rem 1.2rem;
+    
+    border-radius: 3px;
+    border: none;
+    font-family: $general-font;
+    resize: none;
+    outline: $accent;
+    color: $accent;
+    font-size: 0.97rem;
+    background: $primary;
+    
+    &::placeholder {
+      color: $accent;
+    }
+  }
+}
+
+// Desktop view
+@media all and (min-width: 1025px) {
+  // Input
+  .input {
+    width: 100%;
+
+    & input {
+      width: 100%;
+      height: 5rem;
+      margin: 0rem 0 0 0;
+      padding: 0 1rem;
+
+      border: none;
+      border-bottom: 1.5px solid $separation-border-dark;
+      font-family: $general-font;
+      outline: $accent;
+      color: $accent;
+      font-size: 1.03rem;
+      background: $primary;
+
+      &::placeholder {
+        color: $accent;
+      }
+
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+    
+    & textarea {
+      width: 100%;
+      height: 15rem;
+      padding: 1.2rem 1.2rem;
+      
+      border-radius: 3px;
+      border: none;
+      font-family: $general-font;
+      resize: none;
+      outline: $accent;
+      color: $accent;
+      font-size: 1.03rem;
+      background: $primary;
+      
+      &::placeholder {
+        color: $accent;
+      }
+    }
+  }
+}

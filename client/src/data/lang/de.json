@@ -153,6 +153,20 @@
       "cta": "Eine Bewertung abgeben"
     }
   },
+  "contact": {
+    "sub": "Kontakt",
+    "title": "Nehmen Sie Kontakt mit uns auf!",
+    "close": "schließen",
+    "name": "Ihr Name",
+    "email": "E-Mail Adresse",
+    "msg": "Ihre Nachrichten",
+    "submit": "Nachricht senden",
+    "processing": "Verarbeitung...",
+    "missing": "Bitte füllen Sie alle Felder aus.",
+    "invalidMail": "Bitte geben Sie eine gültige E-Mail Adresse ein.",
+    "success": "👍 Die Nachricht wurde erfolgreich gesendet! Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "serverError": "👎 Bei unseren Servern ist ein Fehler aufgetreten. Bitte versuchen Sie es in Kürze erneut oder kontaktieren Sie uns direkt: info@jubefa.de"
+  },
   "footer": {
     "title": "Benötigen Sie einen Immobilienmakler?",
     "cta": "Weiter geht's",
@@ -172,7 +186,11 @@
       "title": "Newsletter",
       "email": "E-Mail Adresse"
     },
-    "copyright": "© Copyright 2022 JubefaGmbH. Alle Rechte vorbehalten"
+    "copyright": "© Copyright 2022 JubefaGmbH. Alle Rechte vorbehalten",
+    "invalid": "Bitte geben Sie eine gültige E-Mail ein.",
+    "taken": "Diese E-Mail ist bereits abonniert.",
+    "error": "Es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut.",
+    "success": "Sie haben sich erfolgreich für unseren Newsletter angemeldet."
   },
 
   "solar": {

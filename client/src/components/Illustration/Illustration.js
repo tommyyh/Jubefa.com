@@ -6,7 +6,7 @@ import desktopIll1SVG from 'assets/images/desktopIllustration1.png';
 import desktopIll2SVG from 'assets/images/desktopIllustration2.png';
 import { useMediaQuery } from 'react-responsive';
 
-const Illustration = ({ langCode, lang: l }) => {
+const Illustration = ({ langCode, lang: l, setContactOpen }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
   const isDesktop = useMediaQuery({
     query: '(min-width: 1025px)',
@@ -20,7 +20,7 @@ const Illustration = ({ langCode, lang: l }) => {
           <h2>{l.title}</h2>
           <p>{l.text}</p>
 
-          <Cta link={`/${langCode}/`} title={l.cta} />
+          <Cta link={``} onClick={() => setContactOpen(true)} title={l.cta} />
         </div>
 
         {/* Illustration */}

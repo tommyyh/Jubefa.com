@@ -13,17 +13,19 @@ const RoofTypes = ({ langCode, lang }) => {
   const l = lang.solar.roofs;
 
   return (
-    <section className={css['roofs']}>
-      <h3>{l.sub}</h3>
-      <h2>{l.title}</h2>
+    <div className={css['cont']}>
+      <section className={css['roofs']}>
+        <h3>{l.sub}</h3>
+        <h2>{l.title}</h2>
 
-      <div className={css['list']}>
-        <Roof l={l.roof1} img1={roofs1PNG} img2={roofs2PNG} />
-        <Roof l={l.roof2} img1={roofs3PNG} img2={roofs4PNG} />
-        <Roof l={l.roof3} img1={roofs5PNG} img2={roofs6PNG} />
-        <Roof l={l.roof4} img1={roofs7PNG} img2={roofs8PNG} />
-      </div>
-    </section>
+        <div className={css['list']}>
+          <Roof l={l.roof1} img1={roofs1PNG} img2={roofs2PNG} />
+          <Roof l={l.roof2} img1={roofs3PNG} img2={roofs4PNG} />
+          <Roof l={l.roof3} img1={roofs5PNG} img2={roofs6PNG} />
+          <Roof l={l.roof4} img1={roofs7PNG} img2={roofs8PNG} />
+        </div>
+      </section>
+    </div>
   );
 };
 

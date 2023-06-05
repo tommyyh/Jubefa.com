@@ -6,7 +6,7 @@ import Anonymous from 'assets/images/anonymous.jpg';
 import Cta from 'components/Cta/Cta';
 import variablesJson from 'data/variables/variables.json';
 
-const Reviews = ({ lang, langCode }) => {
+const Reviews = ({ lang, langCode, setContactOpen }) => {
   const l = lang.reviews;
   const color = variablesJson.colors.accentPurple;
 
@@ -17,21 +17,31 @@ const Reviews = ({ lang, langCode }) => {
           <Review l={l.review1} img={Anonymous} />
           <Review l={l.review2} img={Anonymous} />
           <Review l={l.review3} img={Anonymous} />
-          <Prompt l={l.prompt} langCode={langCode} color={color} />
+          <Prompt
+            l={l.prompt}
+            langCode={langCode}
+            color={color}
+            setContactOpen={setContactOpen}
+          />
         </div>
       </section>
     </div>
   );
 };
 
-const Prompt = ({ l, langCode, color }) => {
+const Prompt = ({ l, langCode, color, setContactOpen }) => {
   return (
     <div className={css['prompt']}>
       <h4>{l.sub}</h4>
       <h3>{l.title}</h3>
       <p>{l.text}</p>
 
-      <Cta title={l.cta} link={`/${langCode}/`} color={color} />
+      <Cta
+        title={l.cta}
+        link={''}
+        onClick={() => setContactOpen(true)}
+        color={color}
+      />
     </div>
   );
 };

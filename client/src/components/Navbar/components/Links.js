@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import css from './links.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Links = ({ lang, langCode, url }) => {
+const Links = ({ lang, langCode, url, setContactOpen }) => {
   const [langOpen, setLangOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const ref = useRef(null);
@@ -38,16 +38,13 @@ const Links = ({ lang, langCode, url }) => {
             {servicesOpen && (
               <div className={css['services-dropdown']} ref={ref}>
                 <Link to={`/${langCode}`}>{l.servicesList.first}</Link>
-                <Link to={`/${langCode}`}>{l.servicesList.second}</Link>
-                <Link to={`/${langCode}`}>{l.servicesList.third}</Link>
+                {/* <Link to={`/${langCode}`}>{l.servicesList.second}</Link>
+                <Link to={`/${langCode}`}>{l.servicesList.third}</Link> */}
                 <Link to={`/${langCode}/solar`}>{l.servicesList.forth}</Link>
               </div>
             )}
           </li>
-          <li>
-            <Link to={`/${langCode}`}>{l.projectDev}</Link>
-          </li>
-          <li>{l.contact}</li>
+          <li onClick={() => setContactOpen(true)}>{l.contact}</li>
         </ul>
       </div>
 
@@ -65,12 +62,18 @@ const Links = ({ lang, langCode, url }) => {
               </div>
             )}
           </li>
-          <li>{lang.general.tel}</li>
           <li
-            className={css['sell-cta']}
-            onClick={() => navigate(`/${langCode}/sell-property`)}
+            onClick={() => {
+              window.location.href = lang.footer.info.tel;
+            }}
           >
-            <Link to={`/${langCode}/sell-property`}>{l.cta}</Link>
+            {lang.general.tel}
+          </li>
+          <li
+            className={css['sell-cta-text']}
+            onClick={() => setContactOpen(true)}
+          >
+            {l.cta}
           </li>
         </ul>
       </div>

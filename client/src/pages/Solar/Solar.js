@@ -15,9 +15,11 @@ import Cost from './components/Cost';
 import Process from 'components/Process/Process';
 import Video from './components/Video';
 import Footer from 'components/Footer/Footer';
+import Contact from 'components/Contact/Contact';
 
 const Solar = () => {
   const [loading, setLoading] = useState(true);
+  const [contactOpen, setContactOpen] = useState(false);
   const lang = useSelector((state) => state.lang.value.lang.payload);
   const langCode = useSelector((state) => state.lang.value.langCode.payload);
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
@@ -35,25 +37,42 @@ const Solar = () => {
 
   return (
     <>
-      <Navbar lang={lang} langCode={langCode} />
-      <Landing lang={lang} langCode={langCode} />
+      <Navbar lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
+      <Landing
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
       <WhatWeDo
         lang={lang.solar.wwd}
         langCode={langCode}
         img1={wwd1PNG}
         img2={wwd2PNG}
+        setContactOpen={setContactOpen}
       />
       <RoofTypes lang={lang} langCode={langCode} />
-      <Cost lang={lang} langCode={langCode} />
+      <Cost lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
       <WhatWeDo
         lang={lang.solar.price}
         langCode={langCode}
         img1={price1PNG}
         img2={price2PNG}
+        reversed={isDesktop ? true : false}
+        setContactOpen={setContactOpen}
       />
-      <Process lang={lang.solar.process} langCode={langCode} />
+      <Process
+        lang={lang.solar.process}
+        langCode={langCode}
+        isDesktop={isDesktop}
+      />
       <Video lang={lang} langCode={langCode} />
-      <Footer lang={lang} langCode={langCode} />
+      <Footer lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
+      <Contact
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+        contactOpen={contactOpen}
+      />
     </>
   );
 };

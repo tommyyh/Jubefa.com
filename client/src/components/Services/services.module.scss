@@ -110,13 +110,13 @@
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-      background: #dadada;
+      background: #e2e2e2;
       border-radius: 1rem;
     }
 
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
-      background: #c9c9c9;
+      background: #d6d6d6;
     }
   }
   
@@ -184,6 +184,7 @@
     color: $btn-text;
     text-decoration: none;
     font-size: 0.88rem;
+    cursor: pointer;
     
     & img {
       margin: -1px 0 0 0.67rem;

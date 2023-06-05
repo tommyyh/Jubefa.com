@@ -12,9 +12,11 @@ import Process from 'components/Process/Process';
 import WhyUs from './components/WhyUs';
 import Reviews from 'components/Reviews/Reviews';
 import Footer from 'components/Footer/Footer';
+import Contact from 'components/Contact/Contact';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
+  const [contactOpen, setContactOpen] = useState(false);
   const lang = useSelector((state) => state.lang.value.lang.payload);
   const langCode = useSelector((state) => state.lang.value.langCode.payload);
   const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
@@ -32,15 +34,38 @@ const Home = () => {
 
   return (
     <>
-      <Navbar lang={lang} langCode={langCode} />
-      <Landing lang={lang} langCode={langCode} />
-      <Services lang={lang} langCode={langCode} isDesktop={isDesktop} />
-      <Illustration lang={lang.profit} langCode={langCode} />
+      <Navbar lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
+      <Landing
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
+      <Services
+        lang={lang}
+        langCode={langCode}
+        isDesktop={isDesktop}
+        setContactOpen={setContactOpen}
+      />
+      <Illustration
+        lang={lang.profit}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
       <WhatWeDo lang={lang} langCode={langCode} />
       <Process lang={lang.process} langCode={langCode} isDesktop={isDesktop} />
       <WhyUs lang={lang} langCode={langCode} />
-      <Reviews lang={lang} langCode={langCode} />
-      <Footer lang={lang} langCode={langCode} />
+      <Reviews
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
+      <Footer lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
+      <Contact
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+        contactOpen={contactOpen}
+      />
     </>
   );
 };

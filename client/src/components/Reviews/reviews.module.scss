@@ -85,12 +85,13 @@
   
     & h3 {
       @include titles2;
-      margin: -10px 0 0 0;
+      margin: 1px 0 9px 0;
   
       color: $service5-main;
       font-family: $general-font;
       font-weight: 500;
       font-size: 1.5rem;
+      line-height: 1.7rem
     }
   
     & p {

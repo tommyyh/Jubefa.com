@@ -10,6 +10,7 @@ const Menu = ({
   lang,
   langCode,
   setServicesOpen,
+  setContactOpen,
 }) => {
   const l = lang.nav;
 
@@ -38,12 +39,7 @@ const Menu = ({
               <Link to={`/${langCode}`}>{l.home}</Link>
             </li>
             <li onClick={() => setServicesOpen(true)}>{l.services}</li>
-            <li>
-              <Link to={`/${langCode}`}>{l.projectDev}</Link>
-            </li>
-            <li>
-              <Link to={`/${langCode}`}>{l.contact}</Link>
-            </li>
+            <li onClick={() => setContactOpen(true)}>{l.contact}</li>
           </ul>
         </div>
 

@@ -214,7 +214,20 @@
 }
 
 // Sell cta
-.sell-cta a {
+.sell-cta-text {
   text-decoration: none;
   color: $btn-text;
+  
+  padding: 0.62rem 1.42rem;
+  margin: 0 0 0 0;
+
+  font-size: 0.82rem;
+  border-radius: 50px;
+  color: $primary;
+  font-weight: 400;
+  background: $title;
+
+  &:hover {
+    background: $accent-hover;
+  }
 }

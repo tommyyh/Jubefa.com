@@ -20,3 +20,32 @@
 .top {
   padding: 0 $padding;
 }
+
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+  }
+
+  .video {
+    width: $width;
+    padding: 8rem $padding2 0 $padding2;
+
+    & h3 {
+      @include sub2;
+    }
+
+    & h2 {
+      @include titles2;
+    }
+
+    & video {
+      margin: 1.4rem 0 0 0;
+      width: 100%;
+    }
+  }
+
+  .top {
+    padding: 0 0;
+  }
+
+}

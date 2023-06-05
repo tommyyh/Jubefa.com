@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Links from './components/Links';
 
-const Navbar = ({ lang, langCode }) => {
+const Navbar = ({ lang, langCode, setContactOpen }) => {
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -30,7 +30,14 @@ const Navbar = ({ lang, langCode }) => {
           </Link>
 
           {/* Middle Links for desktop */}
-          {isDesktop && <Links lang={lang} langCode={langCode} url={url} />}
+          {isDesktop && (
+            <Links
+              setContactOpen={setContactOpen}
+              lang={lang}
+              langCode={langCode}
+              url={url}
+            />
+          )}
 
           {/* Mobile menu, icon */}
           {isMobile && (
@@ -86,6 +93,7 @@ const Navbar = ({ lang, langCode }) => {
                 logoSVG={logoSVG}
                 lang={lang}
                 langCode={langCode}
+                setContactOpen={setContactOpen}
               />
               <Services
                 setServicesOpen={setServicesOpen}

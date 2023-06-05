@@ -168,13 +168,43 @@
 .badges {
   display: grid;
   grid-template-columns: repeat(auto-fill, 49%);
+  align-items: center;
   row-gap: 0.9rem;
   margin: 1.6rem 0 0 0;
 
   & img {
     width: 10.5rem;
-    margin: 0 0 0 -7px;
+
+    &:nth-child(2) {
+      margin: 0 0 0 -19px;
+    }
+
+    &:first-child {
+      width: 8rem;
+    }
   }
+}
+
+
+// ERROR
+.error {
+  margin: 0.5rem 0 0 0;
+
+  font-size: 0.88rem;
+  color: $error;
+}
+
+// Disabled btn
+.btn-processing {
+  background: $processing !important;
+}
+
+// Success 
+.success {
+  margin: 0.5rem 0 0 0;
+
+  font-size: 0.88rem;
+  color: $success;
 }
 
 @media all and (min-width: 1025px) {
@@ -224,6 +254,8 @@
     }
 
     & h3 {
+      margin: 0 75% 0 0;
+
       font-size: 1.45rem;
       font-weight: 600;
       line-height: 1.78rem;
@@ -379,6 +411,29 @@
     color: $text;
     font-weight: 400;
     line-height: 1.48rem;
+  }
+
+  // ERROR
+  .error {
+    margin: 0.2rem 0 0 0;
+
+    font-size: 0.88rem;
+    color: $error;
+  }
+
+  
+  // Success 
+  .success {
+    margin: 0.6rem 0 0 0;
+
+    font-size: 0.88rem;
+    line-height: 1.1rem;
+    color: $success;
+  }
+
+  // Disabled btn
+  .btn-processing {
+    background: $processing !important;
   }
 
 }

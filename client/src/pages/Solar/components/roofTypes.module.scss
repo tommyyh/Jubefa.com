@@ -46,3 +46,64 @@
     }
   }
 }
+
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+  }
+
+  .roofs {
+    width: $width;
+    padding: 12rem $padding2 0 $padding2;
+  
+    & h3 {
+      @include sub2;
+    }
+  
+    & h2 {
+      @include titles2;
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 23.57% 23.57% 23.57% 23.57%;
+    justify-content: space-between;
+  }
+  
+  // Roof section
+  .roof {
+    margin: 3.7rem 0 0 0;
+  
+    & h4 {
+      margin: 1.47rem 0 0 0;
+  
+      font-size: 1.22rem;
+      font-family: $general-font;
+      font-weight: 500;
+      color: $title;
+    }
+  
+    & p {
+      @include text;
+  
+      margin: .3rem 0 0 0;
+  
+      color: $text2;
+    }
+  }
+  
+  .images {
+    display: flex;
+  
+    & img {
+      width: 6.25rem;
+      height: 6.25rem;
+  
+      &:first-child {
+        margin: 0 0.5rem 0 0;
+      }
+    }
+  }
+
+}

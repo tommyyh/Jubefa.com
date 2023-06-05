@@ -2,33 +2,35 @@ import React from 'react';
 import css from './service.module.scss';
 import { Link } from 'react-router-dom';
 
-const Service = ({ langCode, l, img }) => {
+const Service = ({ langCode, l, img, link }) => {
   return (
     <div className={css['service']}>
       <div>
         <div className={css['top']}>
           <h3>{l.title}</h3>
 
-          <Link to={`/${langCode}/`} className={css['cta']}>
-            <svg
-              viewBox='0 0 7 11'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-              className={css['cta-arrow']}
-            >
-              <g clipPath='url(#clip0_278_221)'>
-                <path
-                  d='M1.46509 9.34514L5.224 5.6528L1.46509 1.96046'
-                  strokeLinecap='round'
-                />
-              </g>
-              <defs>
-                <clipPath id='clip0_278_221'>
-                  <rect width='7' height='11' fill='white' />
-                </clipPath>
-              </defs>
-            </svg>
-          </Link>
+          {link && (
+            <Link to={link} className={css['cta']}>
+              <svg
+                viewBox='0 0 7 11'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+                className={css['cta-arrow']}
+              >
+                <g clipPath='url(#clip0_278_221)'>
+                  <path
+                    d='M1.46509 9.34514L5.224 5.6528L1.46509 1.96046'
+                    strokeLinecap='round'
+                  />
+                </g>
+                <defs>
+                  <clipPath id='clip0_278_221'>
+                    <rect width='7' height='11' fill='white' />
+                  </clipPath>
+                </defs>
+              </svg>
+            </Link>
+          )}
         </div>
 
         <ul>

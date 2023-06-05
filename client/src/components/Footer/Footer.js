@@ -1,20 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './footer.module.scss';
 import { Link } from 'react-router-dom';
 import Logo from 'assets/icons/logo.svg';
 import Cta from 'components/Cta/Cta';
 import checkSVG from 'assets/icons/check.svg';
 import badge1PNG from 'assets/images/badge1.png';
+import fscPNG from 'assets/icons/FSC.png';
+import { post } from 'lib/axios';
+import info from 'data/info.json';
 
-const Footer = ({ lang, langCode }) => {
+const Footer = ({ lang, langCode, setContactOpen }) => {
   const l = lang.footer;
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [processing, setProcessing] = useState(false);
+
+  const submitNewsletter = async () => {
+    setProcessing(true);
+
+    // Check if email format is valid
+    const re = /\S+@\S+\.\S+/;
+
+    if (!re.test(email)) {
+      setProcessing(false);
+
+      return setError(l.invalid);
+    }
+
+    const res = await post(`${info.api}/contact/subscribe/`, {
+      email,
+    });
+
+    switch (res.data.status) {
+      case 401:
+        setError(l.taken);
+
+        break;
+      case 402:
+        setError(l.error);
+
+        break;
+      case 400:
+        setError(l.error);
+        console.log(res.data);
+
+        break;
+      case 200:
+        setSuccess(l.success);
+        setEmail('');
+        setTimeout(() => {
+          setSuccess('');
+        }, 5000);
+
+        break;
+    }
+
+    setProcessing(false);
+  };
 
   return (
     <footer className={css['footer']}>
       <div className={css['top']}>
         <div className={css['top-inner']}>
           <h3>{l.title}</h3>
-          <Cta link={`/${langCode}`} title={l.cta} />
+          <Cta link={``} onClick={() => setContactOpen(true)} title={l.cta} />
         </div>
       </div>
 
@@ -50,7 +100,7 @@ const Footer = ({ lang, langCode }) => {
             <ul className={css['info']}>
               <li
                 onClick={() => {
-                  window.location.href = `mailto:info@jubefa.com`;
+                  window.location.href = `mailto:kontakt@jubefa.com`;
                 }}
               >
                 {l.info.email}
@@ -72,14 +122,24 @@ const Footer = ({ lang, langCode }) => {
                   type='email'
                   name='email'
                   placeholder={l.newsletter.email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  onFocus={() => setError('')}
+                  value={email}
                 />
-                <button>
+                <button
+                  onClick={submitNewsletter}
+                  disabled={processing}
+                  className={processing ? css['btn-processing'] : ''}
+                >
                   <img src={checkSVG} alt='check' />
                 </button>
               </div>
 
+              {error && <p className={css['error']}>{error}</p>}
+              {success && <p className={css['success']}>{success}</p>}
+
               <div className={css['badges']}>
-                <img src={badge1PNG} alt='trust badge' />
+                <img src={fscPNG} alt='trust badge' />
                 <img src={badge1PNG} alt='trust badge' />
               </div>
             </div>
