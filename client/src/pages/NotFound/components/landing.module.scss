@@ -1,0 +1,43 @@
+@import '../../../assets/scss/variables.scss';
+
+.landing {
+  padding: 7rem $padding 0 $padding;
+}
+
+// Content
+.landing {
+  & h1 {
+    @include titles;
+    font-family: $general-font;
+    font-weight: 600;
+  }
+
+  & p {
+    @include text;
+  }
+}
+
+// Desktop view
+@media all and (min-width: 1025px) {
+  .cont {
+    @include center;
+  }
+
+  .landing {
+    width: $width;
+    padding: 7rem $padding2 0 $padding2;
+  }
+  
+  // Content
+  .landing {
+    & h1 {
+      @include titles2;
+      font-family: $general-font;
+      font-weight: 600;
+    }
+  
+    & p {
+      @include text2;
+    }
+  }
+}

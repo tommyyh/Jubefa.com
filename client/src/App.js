@@ -7,10 +7,11 @@ import {
   useNavigate,
   Navigate,
 } from 'react-router-dom';
-import Home from 'pages/Home/Home';
-import Solar from 'pages/Solar/Solar';
 import { useDispatch } from 'react-redux';
 import { setLang, setLangCode } from 'features/langSlice';
+import Home from 'pages/Home/Home';
+import Solar from 'pages/Solar/Solar';
+import NotFound from 'pages/NotFound/NotFound';
 
 function App() {
   const ModifiedRoute = ({ Component }) => {
@@ -42,11 +43,15 @@ function App() {
           path='/:langCode'
           element={<ModifiedRoute Component={Home} />}
         />
-
         <Route
           exact
           path='/:langCode/solar'
           element={<ModifiedRoute Component={Solar} />}
+        />
+
+        <Route
+          path='/:langCode/*'
+          element={<ModifiedRoute Component={NotFound} />}
         />
       </Routes>
     </Router>

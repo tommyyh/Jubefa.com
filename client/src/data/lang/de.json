@@ -8,7 +8,13 @@
     "city": "Dresden",
     "postCode": "01139",
     "url": "https://www.jubefa.com",
-    "author": "Justus-Konrad Flade"
+    "author": "Justus-Konrad Flade",
+    "socials": {
+      "twitter": {
+        "url": "https://twitter.com/Tommy08413211",
+        "username": "Tommy08413211"
+      }
+    }
   },
   "nav": {
     "title": "Jubefa",
@@ -263,5 +269,42 @@
       "sub": "/Einführung",
       "title": "Unser Video abspielen"
     }
+  },
+  "notfound": {
+    "title": "404 Nicht Gefunden",
+    "text": "Es tut uns leid, aber die Seite, die Sie suchen, scheint nicht zu existieren.",
+    "cta": "Zurück zur Hauptseite"
+  },
+  "headHome": {
+    "title": "Immobilienmakler",
+    "desc": "Sie suchen nach Projektentwicklern oder Immobilienmaklern? Suchen Sie nicht weiter! Kontaktieren Sie uns noch heute und entdecken Sie, warum wir die beste Wahl sind!",
+    "shortDesc": "Möchten Sie Ihre ungewollte Immobilie mit Leichtigkeit verkaufen? Schauen Sie sich Jubefa Immobilien an und legen Sie los.",
+    "enUrl": "https://www.jubefa.com/en",
+    "deUrl": "https://www.jubefa.com/de",
+    "summary": "Wir konzentrieren uns auf die Realisierung von Bauprojekten in allen Bereichen. Insbesondere bei Problemimmobilien sind wir der beste Ansprechpartner."
+  },
+  "headSolar": {
+    "title": "Installation von Sonnenkollektoren",
+    "desc": "Möchten Sie auf Solarenergie umsteigen? Suchen Sie nicht weiter! Kontaktieren Sie uns noch heute für die Installation von Sonnenkollektoren.",
+    "shortDesc": "Möchten Sie auf Solarenergie umsteigen? Suchen Sie nicht weiter! Kontaktieren Sie uns noch heute für die Installation von Sonnenkollektoren.",
+    "enUrl": "https://www.jubefa.com/en/solar",
+    "deUrl": "https://www.jubefa.com/de/solar",
+    "summary": "Wenn Sie auf Solarenergie umsteigen wollen, sind Sie bei uns genau richtig. Setzen Sie sich mit uns in Verbindung und lassen Sie Ihre Sonnenkollektoren installieren."
+  },
+  "headImprint": {
+    "title": "Impressum",
+    "desc": "Erfahren Sie mehr über unser Unternehmen und rechtliche Informationen. Kontaktdaten und Informationen zum Datenschutz finden Sie auf unserer Impressumsseite.",
+    "shortDesc": "Erfahren Sie mehr über unser Unternehmen und rechtliche Informationen. Kontaktdaten und Informationen zum Datenschutz finden Sie auf unserer Impressumsseite.",
+    "enUrl": "https://www.jubefa-immobilien.de/en/imprint",
+    "deUrl": "https://www.jubefa-immobilien.de/de/imprint",
+    "summary": "Unser Impressum enthält Informationen über unser Unternehmen, rechtliche Hinweise und Kontaktinformationen."
+  },
+  "head404": {
+    "title": "Seite nicht gefunden",
+    "desc": "Huch! Die Seite, die Sie suchen, ist nicht da. Keine Sorge, wir sind hier, um Ihnen zu helfen, das zu finden, was Sie brauchen. Besuchen Sie unsere Homepage für weitere Informationen.",
+    "shortDesc": "Sorry, diese Seite scheint nicht zu existieren! Bringen wir Sie wieder auf den richtigen Weg.",
+    "enUrl": "https://www.jubefa-immobilien.de/en",
+    "deUrl": "https://www.jubefa-immobilien.de/de",
+    "summary": "Sorry, diese Seite scheint nicht zu existieren! Bringen wir Sie wieder auf den richtigen Weg."
   }
 }

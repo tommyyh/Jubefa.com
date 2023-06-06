@@ -13,6 +13,8 @@ import WhyUs from './components/WhyUs';
 import Reviews from 'components/Reviews/Reviews';
 import Footer from 'components/Footer/Footer';
 import Contact from 'components/Contact/Contact';
+import Head from 'components/Head/Head';
+import homeThumbnailPNG from 'assets/images/homeThumbnail.png';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -32,8 +34,19 @@ const Home = () => {
 
   if (loading) return <Loading />;
 
+  const head = lang.headHome;
+  const domain = `${lang.general.domain}/${langCode === 'en' ? 'de' : 'en'}`;
+
   return (
     <>
+      <Head
+        thumbnail={homeThumbnailPNG}
+        head={head}
+        lang={lang}
+        domain={domain}
+        langCode={langCode}
+      />
+
       <Navbar lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
       <Landing
         lang={lang}

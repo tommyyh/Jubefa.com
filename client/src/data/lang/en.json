@@ -1,6 +1,6 @@
 {
   "general": {
-    "company": "Jubefa",
+    "company": "Jubefa GmbH",
     "tel": "+49 351 27501899",
     "telTrimmed": "+4935127501899",
     "email": "kontakt@jubefa.com",
@@ -8,7 +8,13 @@
     "city": "Dresden",
     "postCode": "01139",
     "url": "https://www.jubefa.com",
-    "author": "Justus-Konrad Flade"
+    "author": "Justus-Konrad Flade",
+    "socials": {
+      "twitter": {
+        "url": "https://twitter.com/Tommy08413211",
+        "username": "Tommy08413211"
+      }
+    }
   },
   "nav": {
     "title": "Jubefa",
@@ -263,5 +269,42 @@
       "sub": "/Introduction",
       "title": "Play our video"
     }
+  },
+  "notfound": {
+    "title": "404 Not Found",
+    "text": "We're sorry, but the page you're looking for does not seem to exist.",
+    "cta": "Go back home"
+  },
+  "headHome": {
+    "title": "Real estate agents",
+    "desc": "Looking for project developers or real estate agents? Look no further! Contact us today and discover why we're the best choice!",
+    "shortDesc": "Looking for real estate agents? Contact us today and discover why we're the best choice!",
+    "enUrl": "https://www.jubefa.com/en",
+    "deUrl": "https://www.jubefa.com/de",
+    "summary": "We focus on realizing construction projects in all areas. In the case of problematic properties in particular, we are the best contact."
+  },
+  "headSolar": {
+    "title": "Solar panel installation",
+    "desc": "Looking to convert to solar energy? Look no further! Contact us today for solar panel installation.",
+    "shortDesc": "Looking to convert to solar energy? Look no further! Contact us today for solar panel installation.",
+    "enUrl": "https://www.jubefa.com/en/solar",
+    "deUrl": "https://www.jubefa.com/de/solar",
+    "summary": "If you're looking to convert to solar energy, then you're in the right place. Get in touch with us and get your solar panels installed."
+  },
+  "headImprint": {
+    "title": "Imprint",
+    "desc": "Learn more about our company and legal information. Find contact details and information about data protection on our Imprint page.",
+    "shortDesc": "Learn more about our company and legal information. Find contact details and information about data protection on our Imprint page.",
+    "enUrl": "https://www.jubefa-immobilien.de/en/imprint",
+    "deUrl": "https://www.jubefa-immobilien.de/de/imprint",
+    "summary": "Our Imprint page contains information about our company, legal notices, and contact details."
+  },
+  "head404": {
+    "title": "Page not found",
+    "desc": "Oops! The page you're looking for isn't here. Don't worry, we're here to help you find what you need. Check out our homepage for more information.",
+    "shortDesc": "Sorry, this page doesn't seem to exist! Let's get you back on track.",
+    "enUrl": "https://www.jubefa-immobilien.de/en",
+    "deUrl": "https://www.jubefa-immobilien.de/de",
+    "summary": "Sorry, this page doesn't seem to exist! Let's get you back on track."
   }
 }

@@ -16,6 +16,8 @@ import Process from 'components/Process/Process';
 import Video from './components/Video';
 import Footer from 'components/Footer/Footer';
 import Contact from 'components/Contact/Contact';
+import Head from 'components/Head/Head';
+import solarThumbnailPNG from 'assets/images/solarThumbnail.png';
 
 const Solar = () => {
   const [loading, setLoading] = useState(true);
@@ -35,8 +37,21 @@ const Solar = () => {
 
   if (loading) return <Loading />;
 
+  const head = lang.headSolar;
+  const domain = `${lang.general.domain}/${
+    langCode === 'en' ? 'de' : 'en'
+  }/solar`;
+
   return (
     <>
+      <Head
+        thumbnail={solarThumbnailPNG}
+        head={head}
+        lang={lang}
+        domain={domain}
+        langCode={langCode}
+      />
+
       <Navbar lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
       <Landing
         lang={lang}
