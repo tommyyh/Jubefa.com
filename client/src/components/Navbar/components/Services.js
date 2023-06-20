@@ -47,10 +47,12 @@ const Services = ({ setServicesOpen, servicesOpen, lang, langCode }) => {
             <li>
               <Link to={`/${langCode}`}>{l.servicesList.first}</Link>
             </li>
-            {/* <li>
-              <Link to={`/${langCode}`}>{l.servicesList.second}</Link>
-            </li>
             <li>
+              <Link to={`/${langCode}/construction`}>
+                {l.servicesList.second}
+              </Link>
+            </li>
+            {/* <li>
               <Link to={`/${langCode}`}>{l.servicesList.third}</Link>
             </li> */}
             <li>

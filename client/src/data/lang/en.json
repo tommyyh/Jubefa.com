@@ -306,5 +306,13 @@
     "enUrl": "https://www.jubefa-immobilien.de/en",
     "deUrl": "https://www.jubefa-immobilien.de/de",
     "summary": "Sorry, this page doesn't seem to exist! Let's get you back on track."
+  },
+
+  "construction": {
+    "landing": {
+      "sub": "/Construction",
+      "title": "Transform Your Construction Projects and Maximize Efficiency Today!",
+      "cta": "Start constructing"
+    }
   }
 }

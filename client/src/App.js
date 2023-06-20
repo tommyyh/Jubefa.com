@@ -12,6 +12,7 @@ import { setLang, setLangCode } from 'features/langSlice';
 import Home from 'pages/Home/Home';
 import Solar from 'pages/Solar/Solar';
 import NotFound from 'pages/NotFound/NotFound';
+import Construction from 'pages/Construction/Construction';
 
 function App() {
   const ModifiedRoute = ({ Component }) => {
@@ -36,7 +37,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element={<Navigate to={'/de'} />} />
+        <Route exact path='/' element={<Navigate to={'/en'} />} />
 
         <Route
           exact
@@ -47,6 +48,11 @@ function App() {
           exact
           path='/:langCode/solar'
           element={<ModifiedRoute Component={Solar} />}
+        />
+        <Route
+          exact
+          path='/:langCode/construction'
+          element={<ModifiedRoute Component={Construction} />}
         />
 
         <Route

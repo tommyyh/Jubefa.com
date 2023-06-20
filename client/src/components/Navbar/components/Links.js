@@ -38,8 +38,10 @@ const Links = ({ lang, langCode, url, setContactOpen }) => {
             {servicesOpen && (
               <div className={css['services-dropdown']} ref={ref}>
                 <Link to={`/${langCode}`}>{l.servicesList.first}</Link>
-                {/* <Link to={`/${langCode}`}>{l.servicesList.second}</Link>
-                <Link to={`/${langCode}`}>{l.servicesList.third}</Link> */}
+                <Link to={`/${langCode}/construction`}>
+                  {l.servicesList.second}
+                </Link>
+                {/* <Link to={`/${langCode}`}>{l.servicesList.third}</Link> */}
                 <Link to={`/${langCode}/solar`}>{l.servicesList.forth}</Link>
               </div>
             )}
