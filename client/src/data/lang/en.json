@@ -313,6 +313,16 @@
       "sub": "/Construction",
       "title": "Transform Your Construction Projects and Maximize Efficiency Today!",
       "cta": "Start constructing"
+    },
+    "wwd": {
+      "title": "Transforming Construction Projects with Expertise and Dedication, Regardless of Your Location.",
+      "text": "We bring our expertise and unwavering dedication to construction projects, no matter where you are. From concept to completion, our team delivers exceptional results, ensuring quality craftsmanship and exceeding expectations, all while prioritizing your vision and satisfaction."
+    },
+    "services": {
+      "sub": "/Revitalizing Spaces",
+      "title": "Renovations, Redevelopment and Refurbishment",
+      "text": "Elevate spaces with our expert touch. Renovations, redevelopment, and refurbishment that surpass expectations. Trust the process and transform your environment into something extraordinary.",
+      "cta": "Learn more"
     }
   }
 }

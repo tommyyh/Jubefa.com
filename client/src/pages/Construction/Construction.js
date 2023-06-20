@@ -9,6 +9,8 @@ import Footer from 'components/Footer/Footer';
 import Contact from 'components/Contact/Contact';
 import Head from 'components/Head/Head';
 import solarThumbnailPNG from 'assets/images/solarThumbnail.png';
+import WhatWeDo from './components/WhatWeDo';
+import Services from './components/Services';
 
 const Construction = () => {
   const [loading, setLoading] = useState(true);
@@ -45,6 +47,16 @@ const Construction = () => {
 
       <Navbar lang={lang} langCode={langCode} setContactOpen={setContactOpen} />
       <Landing
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
+      <WhatWeDo
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
+      <Services
         lang={lang}
         langCode={langCode}
         setContactOpen={setContactOpen}
