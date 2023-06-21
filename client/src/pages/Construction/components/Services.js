@@ -10,32 +10,36 @@ const Services = ({ langCode, lang, setContactOpen }) => {
   const l = lang.construction.services;
 
   return (
-    <section className={css['landing']}>
-      <h3>{l.sub}</h3>
-      <h1>{l.title}</h1>
-      <p>{l.text}</p>
+    <div className={css['cont']}>
+      <section className={css['landing']}>
+        <div>
+          <h3>{l.sub}</h3>
+          <h1>{l.title}</h1>
+          <p>{l.text}</p>
 
-      <Cta title={l.cta} onClick={() => setContactOpen(true)} />
+          <Cta title={l.cta} onClick={() => setContactOpen(true)} />
+        </div>
 
-      <div className={css['images']}>
-        <div className={css['image']}>
-          <img src={service1PNG} alt='service' />
-          <img
-            src={service2PNG}
-            alt='service'
-            className={css['image-inner2']}
-          />
+        <div className={css['images']}>
+          <div className={css['image']}>
+            <img src={service1PNG} alt='service' />
+            <img
+              src={service2PNG}
+              alt='service'
+              className={css['image-inner2']}
+            />
+          </div>
+          <div className={css['image2']}>
+            <img src={service3PNG} alt='service' />
+            <img
+              src={service4PNG}
+              alt='service'
+              className={css['image-inner4']}
+            />
+          </div>
         </div>
-        <div className={css['image2']}>
-          <img src={service3PNG} alt='service' />
-          <img
-            src={service4PNG}
-            alt='service'
-            className={css['image-inner4']}
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

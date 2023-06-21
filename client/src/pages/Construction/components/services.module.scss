@@ -52,3 +52,69 @@
 
   margin: 0.3rem 0 0 0;
 }
+
+@media all and (min-width: 1024px) {
+  .cont {
+    @include center;
+
+    background: $primary-second;
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 48% 47%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem $padding2 9.5rem $padding2;
+    width: $width;
+
+    background: initial;
+
+    // Sub
+    & h3 {
+      @include sub2;
+    }
+
+    // Text
+    & p {
+      @include text2;
+      margin: 1rem 0 0 0;
+      font-size: 1.15rem;
+    }
+
+    // Title
+    & h1 {
+      @include titles2;
+    }
+  }
+
+  // Images
+  .images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & img {
+      width: 14.78rem;
+      height: 11.5rem;
+    }
+  }
+
+  .image {
+    margin: 0 0 0 0;
+  }
+
+  .image-inner2 {
+    margin-left: 0.88rem;
+  }
+
+  .image-inner4 {
+    margin-left: 0.88rem;
+  }
+
+  .image2 {
+    align-self: flex-end;
+
+    margin: 0.6rem 0 0 0;
+  }
+}

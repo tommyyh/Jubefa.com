@@ -72,3 +72,88 @@
     }
   }
 }
+
+@media all and (min-width: 1024px) {
+  .cont {
+    @include center;
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 39% 50%;
+    justify-content: space-between;
+    width: $width;
+    margin: 16rem 0 0 0;
+    padding: 0 $padding2 0rem $padding2;
+    position: relative;
+
+    // Text
+    & p {
+      @include text2;
+      margin: 1.4rem 0 0 0;
+      font-size: 1.2rem;
+    }
+
+    // Title
+    & h2 {
+      margin: 1.2rem 0 0 0;
+
+      @include titles2;
+    }
+  }
+
+  // Bubble
+  .cta-bubble {
+    position: absolute;
+    padding: 0 0 0 1.6rem;
+    align-self: flex-end;
+    margin: 0 3rem 0 0;
+    top: -4rem;
+    left: 17rem;
+
+    // Main
+    & h3 {
+      width: fit-content;
+      padding: 0.46rem 1.42rem;
+      margin: 0.73rem 0 0 0;
+
+      font-family: $general-font;
+      font-weight: 500;
+      font-size: 0.96rem;
+      color: $btn-text;
+      background: $accent;
+      border-radius: 3.1rem;
+    }
+
+    & .cta-dot {
+      width: 8px;
+      height: 8px;
+      margin: -1px 0 0 -2.9px;
+      position: relative;
+
+      background: $accent;
+      border-radius: 50%;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        margin: -0.9px 0 0 -2.76px;
+        left: -4.2px;
+        bottom: -4.2px;
+
+        background: $accent;
+        border-radius: 50%;
+      }
+
+      &::after {
+        width: 4px;
+        height: 4px;
+        left: -9.2px;
+        bottom: -7.5px;
+      }
+    }
+  }
+}

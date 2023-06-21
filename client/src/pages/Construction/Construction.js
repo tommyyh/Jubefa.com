@@ -55,6 +55,7 @@ const Construction = () => {
         lang={lang}
         langCode={langCode}
         setContactOpen={setContactOpen}
+        isMobile={isMobile}
       />
       <WhatWeDo
         lang={lang}
