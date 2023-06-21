@@ -15,6 +15,7 @@ import Wwd from 'components/WhatWeDo/WhatWeDo';
 import construction1PNG from 'assets/images/construction/construction1.png';
 import construction2PNG from 'assets/images/construction/construction2.png';
 import Historical from './components/Historical';
+import Brownfield from './components/Brownfield';
 
 const Construction = () => {
   const [loading, setLoading] = useState(true);
@@ -73,6 +74,11 @@ const Construction = () => {
         setContactOpen={setContactOpen}
       />
       <Historical
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
+      <Brownfield
         lang={lang}
         langCode={langCode}
         setContactOpen={setContactOpen}
