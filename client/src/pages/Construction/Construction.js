@@ -11,6 +11,10 @@ import Head from 'components/Head/Head';
 import solarThumbnailPNG from 'assets/images/solarThumbnail.png';
 import WhatWeDo from './components/WhatWeDo';
 import Services from './components/Services';
+import Wwd from 'components/WhatWeDo/WhatWeDo';
+import construction1PNG from 'assets/images/construction/construction1.png';
+import construction2PNG from 'assets/images/construction/construction2.png';
+import Historical from './components/Historical';
 
 const Construction = () => {
   const [loading, setLoading] = useState(true);
@@ -57,6 +61,18 @@ const Construction = () => {
         setContactOpen={setContactOpen}
       />
       <Services
+        lang={lang}
+        langCode={langCode}
+        setContactOpen={setContactOpen}
+      />
+      <Wwd
+        lang={lang.construction.reconstruction}
+        langCode={langCode}
+        img1={construction1PNG}
+        img2={construction2PNG}
+        setContactOpen={setContactOpen}
+      />
+      <Historical
         lang={lang}
         langCode={langCode}
         setContactOpen={setContactOpen}
