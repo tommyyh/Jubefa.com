@@ -45,7 +45,7 @@
 
 // Main
 .main {
-  padding: $padding 0 ;
+  padding: $padding 0;
 
   & a {
     text-decoration: none;
@@ -54,7 +54,7 @@
 
   & li {
     margin: 0.1rem 0 0 0;
-    
+
     list-style-type: none;
     font-size: 1.05rem;
     font-weight: 400;
@@ -110,7 +110,7 @@
     font-weight: 400;
     outline-color: $accent;
   }
-  
+
   & button {
     min-height: 3rem;
     min-width: 3rem;
@@ -166,25 +166,22 @@
 
 // Badges
 .badges {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 49%);
-  align-items: center;
-  row-gap: 0.9rem;
   margin: 1.6rem 0 0 0;
 
   & img {
-    width: 10.5rem;
+    width: 13.5rem;
+  }
 
-    &:nth-child(2) {
-      margin: 0 0 0 -19px;
+  & a {
+    &:first-child img {
+      width: 8rem;
     }
 
-    &:first-child {
-      width: 8rem;
+    &:nth-child(3) img {
+      width: 7rem;
     }
   }
 }
-
 
 // ERROR
 .error {
@@ -199,7 +196,7 @@
   background: $processing !important;
 }
 
-// Success 
+// Success
 .success {
   margin: 0.5rem 0 0 0;
 
@@ -212,7 +209,7 @@
     width: 100%;
     padding: 7.63rem $padding2 0 $padding2;
   }
-  
+
   // Top section - prompt for JUBEFA
   .top-inner {
     width: $width;
@@ -224,7 +221,7 @@
 
     padding: initial;
     position: relative;
-  
+
     // Grey lines - separation
     &::before {
       content: '';
@@ -235,7 +232,7 @@
       left: -$padding;
       top: 0;
     }
-  
+
     &::after {
       content: '';
       position: absolute;
@@ -246,7 +243,7 @@
       bottom: 0;
     }
   }
-  
+
   // Top - text
   .top {
     & a {
@@ -265,7 +262,7 @@
       }
     }
   }
-  
+
   // Main
   .cont {
     @include center;
@@ -279,18 +276,18 @@
   .main {
     width: $width;
     padding: $padding + 0.6rem 1.88rem;
-  
+
     & a {
       width: fit-content;
 
       text-decoration: none;
       color: $text;
     }
-  
+
     & li {
       margin: 0.4rem 0 0 0;
       width: fit-content;
-  
+
       list-style-type: none;
       font-size: 1rem;
       font-weight: 400;
@@ -301,7 +298,7 @@
       }
     }
   }
-  
+
   // Links
   .links {
     & li {
@@ -312,37 +309,37 @@
       text-decoration: underline;
     }
   }
-  
+
   // Info
   .info {
     margin: 0rem 0 0 0;
 
     color: $text;
   }
-  
+
   // Info
   .newsletter {
     margin: 0rem 0 0 0;
-  
+
     & h5 {
       font-size: 1.05rem;
       font-weight: 400;
       color: $text;
     }
   }
-  
+
   // Form
   .form {
     display: flex;
     align-items: center;
-  
+
     margin: 0.25rem 0 0 0;
-  
+
     & input {
       width: 100%;
       height: 2.68rem;
       padding: 0 1.25rem;
-  
+
       border-radius: 3rem;
       border: 1.5px solid $input-border;
       background: transparent;
@@ -352,12 +349,12 @@
       font-weight: 400;
       outline-color: $accent;
     }
-    
+
     & button {
       min-height: 3rem;
       min-width: 3rem;
       margin: 0 0 0 0.6rem;
-  
+
       border-radius: 50%;
       background: $accent;
       border: none;
@@ -366,7 +363,7 @@
       &:hover img {
         transform: rotate(360deg);
       }
-  
+
       // Check
       & img {
         width: 1.31rem;
@@ -377,36 +374,36 @@
       }
     }
   }
-  
+
   // Footer title
   .title {
     margin: 0 0 0.83rem 0;
-  
+
     display: flex;
     align-items: center;
 
     & a {
       margin: 0 0 0 0.35rem;
-  
+
       font-size: 1.1rem;
       font-weight: 500;
       color: $accent;
       transition: 250ms ease;
       text-decoration: none;
     }
-  
+
     & img {
       width: 2.5rem;
       height: 2.5rem;
-  
+
       filter: brightness(80%);
     }
   }
-  
+
   // Copyright
   .copyright {
     margin: 10rem 0 0 0;
-  
+
     font-size: 1.07rem;
     color: $text;
     font-weight: 400;
@@ -421,8 +418,7 @@
     color: $error;
   }
 
-  
-  // Success 
+  // Success
   .success {
     margin: 0.6rem 0 0 0;
 
@@ -436,4 +432,24 @@
     background: $processing !important;
   }
 
+  // Badges
+  .badges {
+    margin: 2.3rem 0 0 0;
+
+    & img {
+      width: 13.5rem;
+      margin: 0 0 0 1.4rem;
+    }
+
+    & a {
+      &:first-child img {
+        width: 8rem;
+        margin: initial;
+      }
+
+      &:nth-child(3) img {
+        width: 7rem;
+      }
+    }
+  }
 }
