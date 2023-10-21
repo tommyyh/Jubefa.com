@@ -2,6 +2,7 @@
   "colors": {
     "accent": "#133A75",
     "accent2": "#64A2FF",
-    "accentPurple": "#7B23FF"
+    "accentPurple": "#7B23FF",
+    "historical": "#baa173"
   }
 }

@@ -44,3 +44,57 @@
 .arrow {
   margin: 1rem 0 0 11.5rem + 0.3rem;
 }
+
+@media all and (min-width: 1024px) {
+  .cont {
+    @include center;
+  }
+
+  .landing {
+    display: grid;
+    grid-template-columns: 39% 50%;
+    justify-content: space-between;
+    width: $width;
+    padding: 10.2rem $padding2 8rem $padding2;
+
+    // Text
+    & p {
+      @include text2;
+      margin: 0rem 0 0 0;
+    }
+
+    // Title
+    & h1 {
+      @include titles2;
+    }
+  }
+
+  // Images
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+    & img {
+      width: 18.25rem;
+      height: 11.9rem;
+
+      object-fit: cover;
+      border-radius: 1.3rem;
+
+      &:last-child {
+        align-self: flex-start;
+
+        margin: -4rem 0 0 0;
+        width: 16.8rem;
+        height: 12.5rem;
+      }
+    }
+  }
+
+  // Arrow
+  .arrow {
+    margin: 1rem 0 0 11.5rem + 0.3rem;
+  }
+}

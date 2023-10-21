@@ -5,10 +5,12 @@ const WhatWeDo = ({ langCode, lang, setContactOpen }) => {
   const l = lang.construction.wwd;
 
   return (
-    <section className={css['landing']}>
-      <h1>{l.title}</h1>
-      <p>{l.text}</p>
-    </section>
+    <div className={css['cont']}>
+      <section className={css['landing']}>
+        <h1>{l.title}</h1>
+        <p>{l.text}</p>
+      </section>
+    </div>
   );
 };
 

@@ -137,12 +137,32 @@ const Footer = ({ lang, langCode, setContactOpen }) => {
 
               {error && <p className={css['error']}>{error}</p>}
               {success && <p className={css['success']}>{success}</p>}
-
-              <div className={css['badges']}>
-                <img src={fscPNG} alt='trust badge' />
-                <img src={badge1PNG} alt='trust badge' />
-              </div>
             </div>
+          </div>
+
+          <div className={css['badges']}>
+            <a href='https://www.flade-schmidt-consulting.com' target='_blanks'>
+              <img src={fscPNG} alt='trust badge' />
+            </a>
+            <a
+              href='https://www.btrusted.de/profile/standalone/6303162'
+              target='_blanks'
+            >
+              <img src={badge1PNG} alt='trust badge' />
+            </a>
+            <a href='https://www.btrusted.de/profile/standalone/6303162'>
+              <img
+                src='https://www.btrusted.de/resources/images/seal_main_recommended_128.png'
+                alt='trust badge'
+              />
+            </a>
+
+            <a href='https://www.btrusted.de/profile/standalone/6303162'>
+              <img
+                src='https://www.btrusted.de/seal/imageweb/6303162.png?size=1&amp;type=1'
+                alt='trust badge'
+              />
+            </a>
           </div>
 
           <h4 className={css['copyright']}>{l.copyright}</h4>

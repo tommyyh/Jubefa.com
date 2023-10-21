@@ -37,7 +37,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element={<Navigate to={'/en'} />} />
+        <Route exact path='/' element={<Navigate to={'/de'} />} />
 
         <Route
           exact

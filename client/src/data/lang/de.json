@@ -306,5 +306,40 @@
     "enUrl": "https://www.jubefa-immobilien.de/en",
     "deUrl": "https://www.jubefa-immobilien.de/de",
     "summary": "Sorry, diese Seite scheint nicht zu existieren! Bringen wir Sie wieder auf den richtigen Weg."
+  },
+
+  "construction": {
+    "landing": {
+      "sub": "/Bauwesen",
+      "title": "Transformieren Sie Ihre Bauprojekte und maximieren Sie die Effizienz noch heute!",
+      "cta": "Mit dem Bau beginnen"
+    },
+    "wwd": {
+      "title": "Wir setzen Bauprojekte mit Kompetenz und Engagement um, unabhängig von Ihrem Standort.",
+      "text": "Wir bringen unser Fachwissen und unser unermüdliches Engagement in Bauprojekte ein, ganz gleich, wo Sie sich befinden. Vom Konzept bis zur Fertigstellung liefert unser Team außergewöhnliche Ergebnisse, gewährleistet handwerkliche Qualität und übertrifft Ihre Erwartungen, wobei Ihre Vision und Zufriedenheit im Vordergrund stehen."
+    },
+    "services": {
+      "sub": "/Revitalisierung von Räumen",
+      "title": "Renovierungen, Sanierungen und Umbauten",
+      "text": "Verschönern Sie Ihre Räume mit unserer fachmännischen Hand. Renovierungen, Umgestaltungen und Sanierungen, die Ihre Erwartungen übertreffen. Vertrauen Sie dem Prozess und verwandeln Sie Ihre Umgebung in etwas Außergewöhnliches.",
+      "cta": "Mehr erfahren"
+    },
+    "reconstruction": {
+      "sub": "/Wiederaufbau",
+      "title": "Wir verwandeln Ihre Immobilie",
+      "text": "Erneuerung von Räumen mit Präzision und Sorgfalt. Vertrauen Sie uns, wenn es um einen bemerkenswerten Wiederaufbau geht, der Ihrer Umgebung neues Leben einhaucht.",
+      "cta": "Verwandeln Sie Ihr Eigentum"
+    },
+    "historical": {
+      "sub": "/Renovierung von Altbauten",
+      "title": "Wir arbeiten in historischen Gebäuden und Strukturen",
+      "text": "Wir zeichnen uns durch fachkundige Rekonstruktionsleistungen für historische Gebäude aus. Unser Fachwissen erstreckt sich auf verschiedene Projekttypen, aber wir sind stolz darauf, das Erbe zu bewahren und außergewöhnliche Ergebnisse zu liefern, die die Vergangenheit ehren und gleichzeitig die Zukunft einbeziehen.",
+      "cta": "Mehr erfahren"
+    },
+    "brownfield": {
+      "sub": "Sanierung von Industriebrachen",
+      "title": "Erneuerung von Räumen durch fachgerechte Brachflächen-Sanierung für eine nachhaltige Transformation",
+      "text": "Wir widmen uns der Erneuerung von Räumen durch die fachgerechte Sanierung von Industriebrachen. Unser nachhaltiger Transformationsansatz kombiniert Fachwissen, Innovation und Umweltverantwortung, um kontaminierte Standorte zu revitalisieren und gleichzeitig die umliegenden Gemeinden zu erhalten und aufzuwerten."
+    }
   }
 }

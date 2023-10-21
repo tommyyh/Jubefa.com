@@ -2,46 +2,47 @@ $general-font: 'Poppins', sans-serif;
 $header-font: 'Raleway', sans-serif;
 
 // Colors - main
-$accent: #133A75;
+$accent: #133a75;
 $accent-hover: #184283;
-$accent2: #64A2FF;
+$accent2: #64a2ff;
 $primary: #fff;
-$second: #061A2F;
+$second: #061a2f;
 $text: #4d5d6d;
 $text2: #708397;
-$title-lighter: #0A2540;
+$title-lighter: #0a2540;
 $title: #051a2e;
-$primary-second: #F6F9FC;
-$text-darker: #4B5661;
+$primary-second: #f6f9fc;
+$text-darker: #4b5661;
 
 // Other
 $primary-darker: #ebeaea;
 $btn-text: #fff;
 $separation-border: #e7e7e6;
 $separation-border-dark: #d4d4d4;
-$input-border: #99A19C;
+$input-border: #99a19c;
 $accent2-title: #fff;
-$accent2-text: #C4C9CD;
+$accent2-text: #c4c9cd;
 $primary-hover: #eeeeee;
+$historical: #baa173;
 
 // Services
 $service1-bg: #fbf4f2;
 $service1-main: #ea8f78;
 
-$service2-bg: #EEF2F3;
+$service2-bg: #eef2f3;
 $service2-main: #315772;
 
-$service3-bg: #F4F1EB;
-$service3-main: #71643C;
+$service3-bg: #f4f1eb;
+$service3-main: #71643c;
 
-$service4-bg: #F4F9FF;
-$service4-main: #678EF4;
+$service4-bg: #f4f9ff;
+$service4-main: #678ef4;
 
-$service5-bg: #F9F5FF;
-$service5-main: #AB79F8;
-$service5-cta: #7B23FF;
-$service5-sub: #CB90FA;
-$service5-text: #675B7A;
+$service5-bg: #f9f5ff;
+$service5-main: #ab79f8;
+$service5-cta: #7b23ff;
+$service5-sub: #cb90fa;
+$service5-text: #675b7a;
 
 $service-text: #6e7072;
 
@@ -78,7 +79,7 @@ $height: 646px;
 }
 
 @mixin text {
-  font-size: 0.99rem;
+  font-size: 0.994rem;
   font-weight: 300;
   color: $text;
 }
@@ -108,7 +109,7 @@ $height: 646px;
 }
 
 @mixin text2 {
-  font-size: 1.05rem;
+  font-size: 1.3rem;
   font-weight: 300;
   color: $text2;
 }
